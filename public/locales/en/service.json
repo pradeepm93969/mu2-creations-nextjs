@@ -1,0 +1,295 @@
+{
+    "header": "Our Services",
+    "subHeader": "What we offer",
+    "details": "Learn More...",
+    "notFound": "Requested Service is not found..",
+    "count": 13,
+    "service-children": [
+        {
+            "id": "offset-printing",
+            "header": "Offset Printing", 
+            "subHeader": "Delivering High-Quality Print Solutions",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-2.png",
+            "pageBannerImage": "/img/hero/desktop-2.png",
+            "pageImage1": "/img/hero/mobile-2.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-2.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "gift-item-printing",
+            "header": "Gift Items Printing", 
+            "subHeader": "Personalized Creations for Memorable Moments",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "digital-offset-printing",
+            "header": "Digital Offset Printing", 
+            "subHeader": "Redefining Printing with Unmatched Precision and Versatility",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "large-format-printing",
+            "header": "Large Format Printing", 
+            "subHeader": "Making a Big Impact with Stunning Visuals",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "vehicle-branding",
+            "header": "Vehicle Branding", 
+            "subHeader": "Drive Your Message with Impact",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "digital-fabric-printing",
+            "header": "Digital Fabric Printing", 
+            "subHeader": "Unleash Vibrant Creativity on Flags and Poles",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "signages",
+            "header": "Signages", 
+            "subHeader": "Command Attention with Effective Visual Communication",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "exhibition-stands",
+            "header": "Exhibition Stands (Woodwork)", 
+            "subHeader": "Showcase Your Brand with Distinctive Elegance",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "art-and-artifacts",
+            "header": "Art & Artifacts", 
+            "subHeader": "Transforming Spaces with Creativity and Culture",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "inflatable-structures",
+            "header": "Inflatable Structures", 
+            "subHeader": "Eye-Catching, Versatile, and Portable Solutions",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "metal-fabrication",
+            "header": "Metal Fabrication", 
+            "subHeader": "Crafting Precision and Durability",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "lenticular-printing",
+            "header": "Lenticular Printing", 
+            "subHeader": "Captivating Visual Experiences",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        },
+        {
+            "id": "styro-works",
+            "header": "Styro Works", 
+            "subHeader": "Creating Lightweight and Versatile Solutions",
+            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "cardImage": "/img/hero/mobile-1.png",
+            "pageBannerImage": "/img/hero/desktop-1.png",
+            "pageImage1": "/img/hero/mobile-1.png",
+            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "pageImage2": "/img/hero/mobile-1.png",
+            "pageContent2": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "accordianContent": [
+                {
+                    "header": "Range of Applications",
+                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                },
+                {
+                    "header": "Printing Capabilities",
+                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                }
+            ]
+        }
+    ]
+}

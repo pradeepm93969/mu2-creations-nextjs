@@ -1,0 +1,39 @@
+{
+  "name": "mu2-creations",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@react-google-maps/api": "^2.18.1",
+    "dotenv": "^16.3.1",
+    "formik": "^2.4.2",
+    "mui-tel-input": "^3.2.2",
+    "next": "latest",
+    "next-i18next": "latest",
+    "nodemailer": "^6.9.3",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-phone-number-input": "^3.3.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-select-country-list": "^2.2.3",
+    "slick-carousel": "^1.8.1",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "company": {
+    "name": "MU2 Creations",
+    "phonenumber": "(055) 118 2021",
+    "whatsappNumber": "971551182021",
+    "email": "info@mu2creations.com",
+    "address": "برج الموسى ١، شارع الشيخ زايد، صندوق بريد: 62864 دبي، الإمارات العربية المتحدة",
+    "facebookLink": "https://facebook.com/mu2-creations",
+    "twitterLink": "https://twitter.com/mu2-creations",
+    "instaLink": "https://facebook.com/mu2-creations",
+    "linkdinLink": "https://linkdin.com/mu2-creations"
+  },
+  "header": {
+    "topHeader": {
+      "enabled": true,
+      "text": "ساعات العمل: الاثنين - الجمعة ٨:٠٠ صباحًا إلى ٦:٠٠ مساءً",
+      "contactText": "اتصل"
+    },
+    "mainHeader": {
+      "count": 4,
+      "childLinks": [
+        {"label": "الرئيسية","href": "/"},
+        {"label": "من نحن","href": "/about-us"},
+        {"label": "الخدمات","href": "/services", "count": 13,
+        "childLinks": [
+          {"label": "طباعة أوفست","href": "/services/offset-printing"},
+          {"label": "هدايا","href": "/services/gift-items"},
+          {"label": "طباعة أوفست رقمية","href": "/services/digital-offset-printing"},
+          {"label": "طباعة بتقنية الوايد فورمات","href": "/services/large-format-printing"},
+          {"label": "تغليف المركبات","href": "/services/vehicle-branding"},
+          {"label": "طباعة الأقمشة الرقمية","href": "/services/digital-fabric-printing"},
+          {"label": "الشعارات","href": "/services/signages"},
+          {"label": "المعارض","href": "/services/exhibition-stands"},
+          {"label": "الفن والآثار","href": "/services/art-and-artifacts"},
+          {"label": "القوالب النفخية","href": "/services/inflatables"},
+          {"label": "طباعة ثلاثية الأبعاد","href": "/services/lenticular-printing"},
+          {"label": "تصنيع المعدن","href": "/services/metal-fabrication"},
+          {"label": "أشغال البوليسترين","href": "/services/styro-works"}
+        ]},
+        {"label": "اتصل بنا","href": "/contact-us"}
+      ]
+    }
+  },
+  "footer": {
+    "topFooter": {
+      "enabled": true,
+      "helpText": "نحن هنا للمساعدة:",
+      "emailUs": "أرسل لنا بريدًا إلكترونيًا"
+    },
+    "mainFooter": {
+      "about": "MU2 Creations هي شركة ديناميكية ومبتكرة متخصصة في مجموعة واسعة من الخدمات الإبداعية. بشغف للطباعة والتصميم والتصنيع، نحقق التصور من خلال مجموعتنا المتنوعة.",
+      "contactUs": "اتصل بنا",
+      "column1": {
+        "label": "الخدمات",
+        "count": 5,
+        "childLinks": [
+          {"label": "طباعة أوفست","href": "/offset-printing"},
+          {"label": "هدايا","href": "/gift-items"},
+          {"label": "تغليف المركبات","href": "/vehicle-branding"},
+          {"label": "تصنيع المعدن","href": "/metal-fabrication"},
+          {"label": "أشغال البوليسترين","href": "/styro-works"}
+        ]
+      },
+      "column2": {
+        "label": "روابط مفيدة",
+        "count":5,
+        "childLinks": [
+          {"label": "الرئيسية","href": "/"},
+          {"label": "من نحن","href": "/about-us"},
+          {"label": "الخدمات","href": "/services"},
+          {"label": "اتصل بنا","href": "/contact-us"},
+          {"label": "خريطة الموقع","href": "/site-map"}
+        ]
+      },
+      "column3": {
+        "text1": "مواعيد العمل",
+        "text2": "الاثنين - الجمعة ٨:٠٠ صباحًا إلى ٦:٠٠ مساءً"
+      }
+    },
+    "bottomFooter": {
+      "enabled": true,
+      "termsOfUse": { "label": "شروط الاستخدام", "href": "/terms-of-use" },
+      "privacyPolicy": { "label": "سياسة الخصوصية", "href": "/privacy-policy" },
+      "siteMap": { "label": "خريطة الموقع", "href": "/site-map" },
+      "developedBy": "تم التطوير بواسطة براديب منجوناث"
+    }
+  },
+  "404": {
+    "code": "404",
+    "text": "الصفحة غير موجودة",
+    "homeLink": "الرئيسية"
+  },
+  "500": {
+    "code": "500",
+    "text": "خطأ داخلي في الخادم",
+    "homeLink": "الرئيسية"
+  }
+}
