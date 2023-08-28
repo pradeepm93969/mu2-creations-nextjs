@@ -1,12 +1,17 @@
 import React from "react";
-import { Box,  useMediaQuery } from "@mui/material";
+import { Box,  IconButton,  useMediaQuery } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
 const HeroBanner = () => {
+  const { i18n } = useTranslation();
   const { t } = useTranslation("home");
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
+  const isRTL = i18n.language === 'ar';
 
   const renderImages = (media) => {
     const imageCount = t(`heroBanner.count`);
@@ -18,9 +23,19 @@ const HeroBanner = () => {
     return images;
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    rtl: isRTL
+  };
+
   return (
-    <Box>
-      <Carousel showStatus={false} showThumbs={false} showArrows={true} showIndicators={true} infiniteLoop autoPlay interval={3000}>
+    <Box sx={{pb:4, maxWidth: "100%", overflowX: "hidden", overflowY: "auto"}}>
+      <Slider {...settings}>
       
         {renderImages(isMobile ? "mobile" : "desktop").map((image, index) => (
           <Box key={index}>
@@ -35,7 +50,7 @@ const HeroBanner = () => {
             />
           </Box>
         ))}
-      </Carousel>
+      </Slider>
     </Box>
   );
 };
