@@ -7,11 +7,10 @@ import SEO from "../../layouts/SEO";
 import ImageCard from "../../components-ui/card/ImageCard";
 
 const ServiceDetail = ({ id }) => {
-  const { t } = useTranslation("service");
-  const { tc } = useTranslation("common");
+  const { t } = useTranslation("service", "common");
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  const serviceData = t(`childItems`, { returnObjects: true }).find((service) => service.id === id);
+  const serviceData = t(`service:childItems`, { returnObjects: true }).find((service) => service.id === id);
 
   if (!serviceData) {
     // Handle the case where the id doesn't match any service
@@ -26,7 +25,7 @@ const ServiceDetail = ({ id }) => {
 
   return (
     <>
-    <SEO title={tc("company.name") + " | " + serviceData.header} description={serviceData.pageContent1}/>
+    <SEO title={t("common:company.name") + " | " + serviceData.header} description={serviceData.pageContent1}/>
 
     <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
@@ -87,10 +86,7 @@ const ServiceDetail = ({ id }) => {
      
           </Grid>
         </Slide>
-        
       </Grid>
-
-      
     </Box>
     </>
   );
