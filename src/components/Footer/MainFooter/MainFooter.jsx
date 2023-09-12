@@ -1,69 +1,37 @@
 import React from "react";
 import { Box, Typography, Grid, Divider } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
-import { Email, Facebook, Instagram, LinkedIn, Phone, Pin, Place, Twitter } from "@mui/icons-material";
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
+import { Place } from "@mui/icons-material";
+import CustomSocialLinks from "../../../components-ui/common/CustomSocialLinks";
+import CustomEmail from "../../../components-ui/common/CustomEmail";
+import CustomPhoneNumber from "../../../components-ui/common/CustomPhoneNumber";
+import FooterColumn from "./FooterColumn";
 
 const MainFooter = () => {
   const { t } = useTranslation("common");
-
-  const handleLinkClick = (href) => {
-    window.open(href);
-  };
-
-  const renderChildLinks = (column) => {
-    const childLinksCount = t(`footer.mainFooter.${column}.count`);
-    const links = [];
-
-    for (let i = 0; i < childLinksCount; i++) {
-      const link = (
-        <div key={t(`footer.mainFooter.${column}.childLinks.${i}.label`)}>
-          <Link
-            href={t(`footer.mainFooter.${column}.childLinks.${i}.href`)}
-            passHref
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            <Typography
-              variant="body1"
-              sx={{
-                px: 2,
-                pb: 2,
-                display: "flex",
-                justifyContent: { xs: "center", lg: "flex-start" },
-              }}
-            >
-              {t(`footer.mainFooter.${column}.childLinks.${i}.label`)}
-            </Typography>
-          </Link>
-        </div>
-      );
-
-      links.push(link);
-    }
-
-    return links;
-  };
+  const footerLinks1 = t(`footer.mainFooter.column1`, { returnObjects: true });
+  const footerLinks2 = t(`footer.mainFooter.column2`, { returnObjects: true });
 
   return (
     <>
       <Box
         sx={{
           py: 2,
-          px: { xs: 0, sm: 20 },
-          backgroundColor: "common.black",
+          px: { xs: 0, md: 20 },
+          backgroundColor: "grey.900",
           color: "common.white",
         }}
       >
-        <Grid container px={3}>
+        <Grid container px={3} display={"flex"}>
           <Grid
             item
             xs={12}
+            sm={6}
             md={4}
             sx={{
               py: 2,
               display: "flex",
-              justifyContent: { xs: "center", lg: "flex-start" },
+              justifyContent: { xs: "center", sm: "flex-start" },
             }}
           >
             <Box sx={{ width: "100%" }}>
@@ -93,51 +61,23 @@ const MainFooter = () => {
                   WebkitLineClamp: 6, // for Safari support
                   WebkitBoxOrient: "vertical", // for Safari support}>
                   textAlign: "justify",
-                  width: {xs: "100%", md: "75%"},
+                  width: { xs: "100%", md: "75%" },
                 }}
               >
                 {t("footer.mainFooter.about")}
               </Typography>
 
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
-                  alignItems: "center",
-                  m: 2,
-                  mt: 4
-                }}
-              >
-                <Link
-                  href={t("company.facebookLink")}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Facebook sx={{ mr: 2 }} fontSize="large" color="primary" />
-                </Link>
-                <Link
-                  href={t("company.twitterLink")}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Twitter sx={{ mr: 2 }} fontSize="large" color="primary" />
-                </Link>
-                <Link
-                  href={t("company.instaLink")}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Instagram sx={{ mr: 2 }} fontSize="large" color="primary" />
-                </Link>
-                <Link
-                  href={t("company.hrefdinLink")}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <LinkedIn sx={{ mr: 2 }} fontSize="large" color="primary" />
-                </Link>
-              </Box>
+              <CustomSocialLinks
+                facebookLink={t("company.facebookLink")}
+                linkedinLink={t("company.linkdinLink")}
+                instagramLink={t("company.instaLink")}
+                twitterLink={t("company.twitterLink")}
+              />
             </Box>
           </Grid>
 
           <Divider
-            sx={{ width: "100%", display: { xs: "flex", md: "none" }, mx: 0 }}
+            sx={{ width: "100%", display: { xs: "flex", sm: "none" }, mx: 0 }}
             color="white"
             orientation="horizontal"
             variant="middle"
@@ -146,31 +86,18 @@ const MainFooter = () => {
           <Grid
             item
             xs={12}
+            sm={6}
             md={2}
             sx={{
               py: 2,
-              px: {xs: 0, md: 2},
+              px: { xs: 0, md: 2 },
               display: "flex",
               justifyContent: { xs: "center", lg: "flex-start" },
             }}
           >
-            <Box>
-              <Typography
-                variant="h5"
-                sx={{
-                  pb: 2,
-                  px: 2,
-                  display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
-                  fontWeight: "Bold",
-                }}
-              >
-                {t("footer.mainFooter.column1.label")}
-              </Typography>
-
-              {renderChildLinks("column1")}
-            </Box>
+            <FooterColumn input={footerLinks1}/>
           </Grid>
+
           <Divider
             sx={{ width: "100%", display: { xs: "flex", md: "none" }, mx: 0 }}
             color="white"
@@ -181,32 +108,20 @@ const MainFooter = () => {
           <Grid
             item
             xs={12}
+            sm={6}
             md={2}
             sx={{
               py: 2,
-              px: {xs: 0, md: 2},
+              px: { xs: 0, md: 2 },
               display: "flex",
               justifyContent: { xs: "center", lg: "flex-start" },
             }}
           >
-            <Box>
-              <Typography
-                variant="h5"
-                sx={{
-                  pb: 2,
-                  px: 2,
-                  display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
-                  fontWeight: "Bold",
-                }}
-              >
-                {t("footer.mainFooter.column2.label")}
-              </Typography>
-              {renderChildLinks("column2")}
-            </Box>
+            <FooterColumn input={footerLinks2}/>
           </Grid>
+
           <Divider
-            sx={{ width: "100%", display: { xs: "flex", md: "none" }, mx: 0 }}
+            sx={{ width: "100%", display: { xs: "flex", sm: "none" }, mx: 0 }}
             color="white"
             orientation="horizontal"
             variant="middle"
@@ -215,79 +130,62 @@ const MainFooter = () => {
           <Grid
             item
             xs={12}
-            sm={4}
+            sm={6}
+            md={4}
             sx={{
               py: 2,
-              px: {xs: 0, md: 6},
+              px: { xs: 0, md: 6 },
               display: "flex",
-              justifyContent: { xs: "center", lg: "flex-start" },
+              justifyContent: { xs: "center", sm: "flex-start" },
             }}
           >
-            <Box sx={{ width: "100%" }}>
-
+            <Box
+              sx={{
+                width: "100%",
+                justifyContent: { xs: "center", sm: "flex-start" },
+              }}
+            >
               <Typography
                 variant="h3"
                 sx={{
                   pb: 2,
                   px: 2,
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
+                  justifyContent: { xs: "center", sm: "flex-start" },
                   fontWeight: "Bold",
                 }}
               >
                 {t("footer.mainFooter.contactUs")}
               </Typography>
 
-              <Typography
-                variant="body1"
-                align="center"
-                onClick={() =>
-                  handleLinkClick("mailto:" + t("company.email"))
-                }
-                sx={{
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
-                  alignItems: "center",
-                  py: {xs: 1, md: 0},
-                  px: 1
-                }}
-              >
-                <Email sx={{ mx: 1 }} />
-                {t("company.email")}
-              </Typography>
+              <Box sx={{ marginTop: 2, marginLeft: 1, display: "flex", justifyContent: { xs: "center", sm: "flex-start" } }}>
+                <CustomEmail emailAddress={t("company.email")} />
+              </Box>
 
               <Divider
-                sx={{ width: "75%", display: { xs: "none", md: "flex" }, my: 1 }}
+                sx={{
+                  width: "75%",
+                  display: { xs: "none", md: "flex" },
+                  my: 1,
+                }}
                 color="white"
                 orientation="horizontal"
                 variant="middle"
               />
 
-
-              <Typography
-                variant="body1"
-                onClick={() => handleLinkClick("tel:" + t("company.phonenumber"))}
-                sx={{
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
-                  alignItems: "center",
-                  py: {xs: 1, md: 0},
-                  px: 1
-                }}
-              >
-                <Phone sx={{ mx: 1 }} />
-                {t("company.phonenumber")}
-              </Typography>
-
+              <Box sx={{ marginTop: 2, marginLeft: 1, display: "flex", justifyContent: { xs: "center", sm: "flex-start" } }}>
+                <CustomPhoneNumber phoneNumber={t("company.phonenumber")} />
+              </Box>
               <Divider
-                sx={{ width: "75%", display: { xs: "none", md: "flex" }, my: 1 }}
+                sx={{
+                  width: "75%",
+                  display: { xs: "none", md: "flex" },
+                  my: 1,
+                }}
                 color="white"
                 orientation="horizontal"
                 variant="middle"
               />
-
 
               <Typography
                 variant="body1"
@@ -295,12 +193,12 @@ const MainFooter = () => {
                 sx={{
                   cursor: "pointer",
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
+                  justifyContent: { xs: "center", sm: "flex-start" },
                   alignItems: "center",
-                  py: {xs: 1, md: 0},
+                  py: { xs: 1, md: 0 },
                   px: 1,
                   textAlign: "justify",
-                  width: {xs: "100%", md: "75%"} 
+                  width: { xs: "100%", md: "75%" },
                 }}
               >
                 <Place sx={{ mx: 1 }} />
@@ -308,7 +206,11 @@ const MainFooter = () => {
               </Typography>
 
               <Divider
-                sx={{ width: {xs: "100%", md: "75%"} , display: { xs: "none", md: "flex" }, my: 1 }}
+                sx={{
+                  width: { xs: "100%", md: "75%" },
+                  display: { xs: "none", md: "flex" },
+                  my: 1,
+                }}
                 color="white"
                 orientation="horizontal"
                 variant="middle"
@@ -318,10 +220,10 @@ const MainFooter = () => {
                 variant="body1"
                 sx={{
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
+                  justifyContent: { xs: "center", sm: "flex-start" },
                   fontWeight: "Bold",
-                  py: {xs: 1, md: 0},
-                  px: 3
+                  py: { xs: 1, md: 0 },
+                  px: 3,
                 }}
               >
                 {t("footer.mainFooter.column3.text1")}
@@ -332,7 +234,7 @@ const MainFooter = () => {
                 sx={{
                   px: 3,
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" }
+                  justifyContent: { xs: "center", sm: "flex-start" },
                 }}
               >
                 {t("footer.mainFooter.column3.text2")}

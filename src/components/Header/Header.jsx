@@ -1,12 +1,15 @@
 import React from 'react';
 import TopHeader from './TopHeader/TopHeader';
-import MainHeader from './MainHeader/MainHeader';
+import { useMediaQuery } from '@mui/material';
+import MainHeaderMobile from './MainHeader/MainHeaderMobile';
+import MainHeaderDesktop from './MainHeader/MainHeaderDesktop';
 
 const Header = () => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
   return (
     <header>
       <TopHeader />
-      <MainHeader />
+      {isMobile ? <MainHeaderMobile/> : <MainHeaderDesktop />}
     </header>
   );
 };

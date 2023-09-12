@@ -3,10 +3,10 @@ import { Box } from '@mui/material';
 import MainLayout from '../src/layouts/MainLayout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import HeroBanner from '../src/components/HeroBanner/HeroBanner';
-import AboutUs from '../src/components/AboutUs/AboutUs';
 import Mission from '../src/components/Mission/Mission';
 import ChooseUs from '../src/components/ChooseUs/ChooseUs';
 import Service from '../src/components/Service/Service';
+import AboutUsHome from '../src/components/AboutUs/AboutUsHome';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <HeroBanner/>
       <Service/>
       <ChooseUs/>
-      <AboutUs/>
+      <AboutUsHome/>
       <Mission/>
     </Box>
   );

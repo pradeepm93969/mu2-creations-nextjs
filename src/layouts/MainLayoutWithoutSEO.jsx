@@ -1,5 +1,4 @@
 import React from "react";
-import SEO from "../layouts/SEO";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { Box } from "@mui/material";
@@ -9,7 +8,7 @@ import { LoadingProvider, useLoading } from "./LoadingProvider";
 import Loader from "../components-ui/common/Loader";
 import WhatsappSticky from "../components-ui/common/WhatsappSticky";
 
-const MainLayout = ({ title, description, children }) => {
+const MainLayoutWithoutSEO = ({ children }) => {
   const { t } = useTranslation("common");
   const loading = useLoading();
 
@@ -17,7 +16,6 @@ const MainLayout = ({ title, description, children }) => {
     <LoadingProvider>
       <Box sx={{ fontSize: { xs: "0.925rem", sm: "1rem" } }}>
         {loading && <Loader />}
-        <SEO title={title} description={description}></SEO>
         <Header />
         <main>{children}</main>
         <Footer />
@@ -28,4 +26,4 @@ const MainLayout = ({ title, description, children }) => {
   );
 };
 
-export default MainLayout;
+export default MainLayoutWithoutSEO;

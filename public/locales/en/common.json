@@ -14,15 +14,13 @@
   "header": {
     "topHeader": {
       "enabled": true,
-      "text": "Working Hours: Mon - Fri 8:00 AM to 6:00 PM",
-      "contactText": "Contact"
+      "text": "Working Hours: Mon - Fri 8:00 AM to 6:00 PM"
     },
     "mainHeader": {
-      "count": 4,
+      "menu": "Menu",
       "childLinks": [
         {"label": "Home","href": "/"},
-        {"label": "About Us","href": "/about-us"},
-        {"label": "Services","href": "/services", "count": 13,
+        {"label": "Services","href": "/services", 
         "childLinks": [
           {"label": "Offset Printing","href": "/services/offset-printing"},
           {"label": "Gift Item Printing","href": "/services/gift-item-printing"},
@@ -38,6 +36,7 @@
           {"label": "Metal Fabrication","href": "/services/metal-fabrication"},
           {"label": "Styro Works","href": "/services/styro-works"}
         ]},
+        {"label": "About Us","href": "/about-us"},
         {"label": "Contact Us","href": "/contact-us"}
       ]
     }
@@ -54,7 +53,6 @@
       "contactUs": "Contact Us",
       "column1": {
         "label": "SERVICES",
-        "count": 5,
         "childLinks": [
           {"label": "Offset printing","href": "/offset-printing"},
           {"label": "Gift item Printing","href": "/gift-item-printing"},
@@ -65,7 +63,6 @@
       },
       "column2": {
         "label": "USEFUL LINKS",
-        "count":5,
         "childLinks": [
           {"label": "Home","href": "/"},
           {"label": "About Us","href": "/about-us"},

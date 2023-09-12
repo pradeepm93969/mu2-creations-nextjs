@@ -1,16 +1,17 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useTranslation } from "next-i18next";
 
-const Logo = ({device}) => {
+const Logo = () => {
 
   const { t } = useTranslation("common");
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   return (
     <>
-      {device === 'mobile' ? (
+      {isMobile ? (
         <Box sx={{mt:1}}>
           <Link href="/">
             <Image src="/img/Logo.png" width={100} height={80} alt="Logo"/>

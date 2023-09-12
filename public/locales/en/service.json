@@ -3,8 +3,7 @@
     "subHeader": "What we offer",
     "details": "Learn More...",
     "notFound": "Requested Service is not found..",
-    "count": 13,
-    "service-children": [
+    "childItems": [
         {
             "id": "offset-printing",
             "header": "Offset Printing", 

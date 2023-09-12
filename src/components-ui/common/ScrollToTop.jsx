@@ -5,7 +5,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Fade from '@mui/material/Fade';
 import Box from '@mui/material/Box';
 
-const ScrollTo = () => {
+const ScrollToTop = () => {
   
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -33,4 +33,4 @@ const ScrollTo = () => {
   );
 };
 
-export default ScrollTo;
+export default ScrollToTop;

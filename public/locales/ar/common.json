@@ -20,7 +20,6 @@
       "count": 4,
       "childLinks": [
         {"label": "الرئيسية","href": "/"},
-        {"label": "من نحن","href": "/about-us"},
         {"label": "الخدمات","href": "/services", "count": 13,
         "childLinks": [
           {"label": "طباعة أوفست","href": "/services/offset-printing"},
@@ -37,6 +36,7 @@
           {"label": "تصنيع المعدن","href": "/services/metal-fabrication"},
           {"label": "أشغال البوليسترين","href": "/services/styro-works"}
         ]},
+        {"label": "من نحن","href": "/about-us"},
         {"label": "اتصل بنا","href": "/contact-us"}
       ]
     }

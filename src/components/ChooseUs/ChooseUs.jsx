@@ -1,24 +1,46 @@
 import React from "react";
-import { Box, Typography, useMediaQuery, Grid, Card, CardHeader, CardContent } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Grid,
+  Card,
+  CardHeader,
+  CardContent,
+  useMediaQuery,
+} from "@mui/material";
 import { useTranslation } from "next-i18next";
 
 const ChooseUs = () => {
   const { t } = useTranslation("home");
+  const items = t(`why-choose-us.children`, {
+    returnObjects: true,
+  });
 
-  const CustomCard = ({ header, text, backgroundGradient }) => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+  const isTab = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const spacing = isMobile ? 0 : (isTab ? 1 : 15);
+
+  const CustomCard = ({ header, text, backgroundColor }) => {
     return (
-      <Card sx={{ maxWidth: 300 }} raised>
+      <Card raised>
         <CardHeader
-          sx={{ background: backgroundGradient, 
-          color: "common.white",
-          height: {md: "80px"}, // Set the desired height for the card header
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center" }}
-          title={<Typography variant="h4" sx={{ fontWeight: "bold" }}>{header}</Typography>}
+          sx={{
+            background:
+              "linear-gradient(180deg, " + backgroundColor + ", #000)",
+            color: "common.white",
+            height: { sm: "80px" }, // Set the desired height for the card header
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          title={
+            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              {header}
+            </Typography>
+          }
         />
-        <CardContent >
+        <CardContent>
           <Typography variant="body1">{text}</Typography>
         </CardContent>
       </Card>
@@ -26,26 +48,56 @@ const ChooseUs = () => {
   };
 
   return (
-    <Box sx={{ px: { xs: 3, md: 40 }, py: 3, maxWidth: "100%", backgroundColor: "#eceff1" }}>
-      <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
+    <Box
+      sx={{
+        px: { xs: 3, md: 40 },
+        py: 3,
+        maxWidth: "100%",
+        backgroundColor: "#eceff1",
+      }}
+    >
+      <Typography
+        variant="h2"
+        color="primary.dark"
+        sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}
+      >
         {t("why-choose-us.header")}
       </Typography>
-      <Typography variant="h4" color="primary.dark" sx={{ fontStyle: "italic", fontWeight: "bold", textAlign: "center", pb: { xs: 4, md: 6 } }}>
+      <Typography
+        variant="h4"
+        color="primary.dark"
+        sx={{
+          fontStyle: "italic",
+          fontWeight: "bold",
+          textAlign: "center",
+          pb: { xs: 4, md: 6 },
+        }}
+      >
         {t("why-choose-us.subHeader")}
       </Typography>
 
-      <Grid container sx={{ display: "flex", justifyContent: "center", pb: 2 }}>
-        <Grid item xs={12} md={4} sx={{ textAlign: "center", display: "flex", justifyContent: "center", mb: 2 }}>
-          {CustomCard({ header: t("why-choose-us.children.0.header"), text: t("why-choose-us.children.0.text"), backgroundGradient: "linear-gradient(180deg, #1976d2, #000)" })}
-        </Grid>
-        <Grid item xs={12} md={4} sx={{ textAlign: "center", display: "flex", justifyContent: "center", mb: 2 }}>
-          {CustomCard({ header: t("why-choose-us.children.1.header"), text: t("why-choose-us.children.1.text"), backgroundGradient: "linear-gradient(180deg, #ffc107, #000)" })}
-        </Grid>
-        <Grid item xs={12} md={4} sx={{ textAlign: "center", display: "flex", justifyContent: "center", mb: {md: 2}}}>
-          {CustomCard({ header: t("why-choose-us.children.2.header"), text: t("why-choose-us.children.2.text"), backgroundGradient: "linear-gradient(180deg, #9c27b0, #000)" })}
-        </Grid>
+      <Grid container sx={{ display: "flex", justifyContent: "center", pb: 2 }} spacing={spacing}>
+        {items.map((item, index) => (
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            sx={{
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              mb: 2,
+            }}
+            key={item.header}
+          >
+            {CustomCard({
+              header: item.header,
+              text: item.text,
+              backgroundColor: item.color,
+            })}
+          </Grid>
+        ))}
       </Grid>
-
     </Box>
   );
 };

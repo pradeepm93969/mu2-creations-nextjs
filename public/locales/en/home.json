@@ -1,43 +1,41 @@
 {
     "heroBanner": {
-        "count": 3,
         "mobile": [
-            "/img/hero/mobile-1.png",
-            "/img/hero/mobile-2.png",
-            "/img/hero/mobile-3.png"
+            {"url": "/img/hero/mobile-1.png", "href": "/"},
+            {"url": "/img/hero/mobile-2.png", "href": "/"},
+            {"url": "/img/hero/mobile-3.png", "href": "/"}
         ],
         "desktop": [
-            "/img/hero/desktop-1.jpg",
-            "/img/hero/desktop-2.png",
-            "/img/hero/desktop-3.png"
+            {"url": "/img/hero/desktop-1.jpg", "href": "/"},
+            {"url": "/img/hero/desktop-2.png", "href": "/"},
+            {"url": "/img/hero/desktop-3.png", "href": "/"}
         ]
     },
     "about-us": {
         "header": "About Us",
         "subHeader": "Print with Precision, Create with Passion",
         "image1": "/img/about-us.png",
-        "text1": "MU2 Creations is more than just a printing and design company. We are a team of creative individuals who are passionate about bringing your ideas to life. With our expertise in printing, design, and fabrication, we create unique and impactful solutions for businesses and individuals alike.",
-        "text2": "From eye-catching marketing materials to stunning signage and displays, we pride ourselves on delivering exceptional quality that stands out from the competition. Our attention to detail and commitment to excellence ensure that every project we undertake is executed with precision and craftsmanship.",
-        "text3": "At MU2 Creations, we believe in the power of collaboration. We work closely with our clients to understand their vision and goals, and then we combine our creative skills with industry-leading technologies to turn concepts into reality. Our dedicated team of professionals is committed to going above and beyond to exceed client expectations and deliver results that make a lasting impression.",
-        "text4": "Whether you need high-quality prints, captivating designs, or custom fabrication, we have the expertise and resources to bring your ideas to life. Trust MU2 Creations for all your creative needs and experience the difference that our passion and dedication can make.",
+        "image2": "/img/about-us.png",
+        "text1": "MU2 Creations is more than just a printing and design company. We are a team of creative individuals who are passionate about bringing your ideas to life. With our expertise in printing, design, and fabrication, we create unique and impactful solutions for businesses and individuals alike. From eye-catching marketing materials to stunning signage and displays, we pride ourselves on delivering exceptional quality that stands out from the competition. Our attention to detail and commitment to excellence ensure that every project we undertake is executed with precision and craftsmanship.",
+        "text2": "At MU2 Creations, we believe in the power of collaboration. We work closely with our clients to understand their vision and goals, and then we combine our creative skills with industry-leading technologies to turn concepts into reality. Our dedicated team of professionals is committed to going above and beyond to exceed client expectations and deliver results that make a lasting impression.Whether you need high-quality prints, captivating designs, or custom fabrication, we have the expertise and resources to bring your ideas to life. Trust MU2 Creations for all your creative needs and experience the difference that our passion and dedication can make.",
         "viewMoreButton": "View More"
     },
     "mission": {
         "header": "Our Mission",
         "subHeader": "Unleashing Creativity, Transforming Visions",
         "children": [
-            {"header": "Vision", "text": "Empowering Brands and Inspiring Visual Excellence."},
-            {"header": "Mission", "text": "Delivering Exceptional Print Solutions and Creative Innovations"},
-            {"header": "Value", "text": "Excellence, Collaboration, and Unleashing Creative Potential"}
+            {"color": "#1976d2", "header": "Vision", "text": "Empowering Brands and Inspiring Visual Excellence."},
+            {"color": "#ffc107", "header": "Mission", "text": "Delivering Exceptional Print Solutions and Creative Innovations"},
+            {"color": "#9c27b0", "header": "Value", "text": "Excellence, Collaboration, and Unleashing Creative Potential"}
         ]
     },
     "why-choose-us": {
         "header": "Why Choose Us",
         "subHeader": "Reasons to Choose MU2 Creations as Your Creative Partner",
         "children": [
-            {"header": "Expertise and Experience", "text": "With years of industry experience, MU2 Creations has developed a deep understanding of printing, branding, fabrication, and design."},
-            {"header": "High-Quality Output", "text": "We strive for excellence in every project. Expect crisp prints, vibrant colors, and durable materials that exceed your expectations."},
-            {"header": "Customization and Personalization", "text": "We understand that each client has unique requirements. That's why we offer tailored solutions to meet your specific needs."}
+            {"color": "#1976d2", "header": "Expertise and Experience", "text": "With years of industry experience, MU2 Creations has developed a deep understanding of printing, branding, fabrication, and design."},
+            {"color": "#ffc107", "header": "High-Quality Output", "text": "We strive for excellence in every project. Expect crisp prints, vibrant colors, and durable materials that exceed your expectations."},
+            {"color": "#9c27b0", "header": "Customization and Personalization", "text": "We understand that each client has unique requirements. That's why we offer tailored solutions to meet your specific needs."}
         ]
     },
     "contact-us": {

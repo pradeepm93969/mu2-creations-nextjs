@@ -1,55 +1,31 @@
 // pages/404.js
-import React from 'react';
-import { Fade, Typography, Box, Card, Button } from '@mui/material';
-import MainLayout from '../src/layouts/MainLayout';
-import Link from "next/link";
+import React from "react";
+import { Box } from "@mui/material";
+import MainLayout from "../src/layouts/MainLayout";
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import CenterErrorCard from "../src/components-ui/card/CenterErrorCard";
 
 export default function Custom404() {
   const { t } = useTranslation("common");
 
   return (
-    <Box sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          textAlign: "center",
-          backgroundColor: "#eceff1",
-          height: "80vh"
-        }}>
-    
-    <Card sx={{
-        maxWidth: "800px",
-        width: "80%",
+    <Box
+      sx={{
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: "10px",
-        bgcolor: "#FFF",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        p: 4,
-      }}>
-        <Box >
-          <Fade in>
-            <div>
-              <Typography variant="h1" sx={{fontWeight: "bold", color: "primary.dark"}}>
-                {t("404.code")}
-              </Typography>
-              <Typography variant="h3" sx={{fontWeight: "bold", color: "primary.dark", my: 2}}>
-                {t("404.text")}
-              </Typography>
-            </div>
-          </Fade>
-        </Box>
-        <Link href="/" style={{ textDecoration: 'none', color: 'white' }} passHref>
-          <Button variant="contained" sx={{fontWeight: "bold", my: 2, fontSize: 20}}>
-            {t("404.homeLink")}
-          </Button>
-        </Link>
-      </Card>
+        textAlign: "center",
+        backgroundColor: "#eceff1",
+        height: "80vh",
+      }}
+    >
+      <CenterErrorCard
+        title={t("404.code")}
+        subtitle={t("404.text")}
+        buttonText={t("404.homeLink")}
+        buttonLink={"/"}
+      />
     </Box>
   );
 }
@@ -57,7 +33,7 @@ export default function Custom404() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
