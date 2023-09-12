@@ -54,7 +54,7 @@ export default function ItemsCarousal({items}) {
     infinite: true,
     slidesToShow: isMobile ? 1 : (isTab ? 2 : 4),
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     rtl: isRTL,
     nextArrow: <CustomNextArrow />,
