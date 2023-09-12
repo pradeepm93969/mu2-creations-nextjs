@@ -8,6 +8,7 @@ import ImageCard from "../../components-ui/card/ImageCard";
 
 const ServiceDetail = ({ id }) => {
   const { t } = useTranslation("service");
+  const { tc } = useTranslation("common");
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   const serviceData = t(`childItems`, { returnObjects: true }).find((service) => service.id === id);
@@ -25,7 +26,7 @@ const ServiceDetail = ({ id }) => {
 
   return (
     <>
-    <SEO title={serviceData.header} description={serviceData.subHeader}/>
+    <SEO title={tc("company.name") + " | " + serviceData.header} description={serviceData.pageContent1}/>
 
     <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
