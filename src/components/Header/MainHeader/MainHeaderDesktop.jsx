@@ -27,16 +27,16 @@ const MainHeaderDesktop = () => {
   const renderChildLinks = (childLinks) => (
     <Box>
       {childLinks.map((childLink, j) => (
-        <React.Fragment key={childLink.label}>
+        <Box key={childLink.label} onClick={() => {setShowDropdown(null)}}>
           <Link href={childLink.href} passHref>
-            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            <Typography variant="h4" sx={{ fontWeight: "bold" }} >
               {childLink.label}
             </Typography>
           </Link>
           {j !== childLinks.length - 1 && (
             <Divider />
           )}
-        </React.Fragment>
+        </Box>
       ))}
     </Box>
   );
