@@ -1,7 +1,8 @@
 
 import React from "react";
 import CustomButton from "../form/CustomButton";
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography, useMediaQuery } from "@mui/material";
+import Image from "next/image";
 
 export default function ItemCard({
   image,
@@ -10,6 +11,7 @@ export default function ItemCard({
   buttonText,
   buttonLink,
 }) {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   return (
     <Card
       sx={{
@@ -20,12 +22,20 @@ export default function ItemCard({
       }}
       raised
     >
-      <CardMedia
-        component="img"
-        height="200"
-        image={image}
-        alt="Header Image"
-      />
+      <Box
+        sx={{
+          overflow: "hidden",
+          width: isMobile ? "89vw" : "auto",
+          position: "relative",
+          height: "250px"
+        }}
+      >
+        <Image
+          src={image}
+          alt={header}
+          fill
+        />
+      </Box>
       <CardContent>
         <Typography variant="h4" sx={{ fontWeight: "bold", py: 2 }} noWrap>
           {header}
