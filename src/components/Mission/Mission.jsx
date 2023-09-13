@@ -42,7 +42,7 @@ const Mission = () => {
             justifyContent: "center",
             alignItems: "center",
             background: "linear-gradient(180deg, " + backgroundColor + ", #000)",
-            minHeight: {sm: "200px"}
+            minHeight: {xs: "140px", sm: "200px"}
           }}
         >
           <IconButton

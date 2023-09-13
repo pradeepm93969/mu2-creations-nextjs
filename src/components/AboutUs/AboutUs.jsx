@@ -16,24 +16,28 @@ const AboutUs = () => {
         {t("about-us.subHeader")}
       </Typography>
 
-      <Grid container spacing={2}>
+      <Box my={4}/>
+
+      <Grid container spacing={4}>
         <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
           <Grid item sm={6}>
-            <Box sx={{ px: { xs: 2, md: 10 }, my: {xs: 2, md: 4} }}>
-              <Typography variant="body1" sx={{ pt: 2, textAlign: "justify" }}>
+            <Box >
+              <Typography variant="body1" sx={{ px: {md: 10}, textAlign: "justify" }}>
                 {t("about-us.text1")}
               </Typography>
             </Box>
           </Grid>
         </Slide>
         <Slide direction="left" in={true} timeout={500} mountOnEnter unmountOnExit>
-          <Grid item sm={6} sx={{my: {sm: 5, md: 0}}}>
+          <Grid item sm={6}>
             <ImageCard src={t("about-us.image1")} alt={t("about-us.header")}/>
           </Grid>
         </Slide>
+
+        <Grid item sm={12}></Grid>
         {!isMobile && (
           <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
-            <Grid item sm={6}  sx={{my: {sm: 5, md: 0}}}>
+            <Grid item sm={6}>
               <ImageCard src={t("about-us.image2")} alt={t("about-us.header")}/>
             </Grid>
           </Slide>
@@ -41,8 +45,8 @@ const AboutUs = () => {
         
         <Slide direction="left" in={true} timeout={500} mountOnEnter unmountOnExit>
           <Grid item sm={6}>
-            <Box sx={{ px: { xs: 2, md: 10 }, py: 4 }}>
-              <Typography variant="body1" sx={{ pb: 2, textAlign: "justify" }}>
+            <Box >
+              <Typography variant="body1" sx={{ px: {md: 10}, textAlign: "justify" }}>
                 {t("about-us.text2")}
               </Typography>
             </Box>
@@ -51,11 +55,12 @@ const AboutUs = () => {
 
         {isMobile && (
           <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
-            <Grid item sm={6}  sx={{my: {sm: 5, md: 0}}}>
+            <Grid item sm={6}>
               <ImageCard src={t("about-us.image2")} alt={t("about-us.header")}/>
             </Grid>
           </Slide>
         )}
+        <Grid item sm={12}></Grid>
       </Grid>
     </Box>
   );

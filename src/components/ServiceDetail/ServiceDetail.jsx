@@ -35,16 +35,18 @@ const ServiceDetail = ({ id }) => {
         {serviceData.subHeader}
       </Typography>
 
-      <Grid container>
+      <Box sx={{py:1}}/>
+
+      <Grid container spacing={6}>
         <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
-          <Grid item sm={6} sx={{my: {sm: 5, md: 0}, px: 2}}>
+          <Grid item sm={6} >
             <ImageCard src={serviceData.pageImage1} alt={serviceData.header}/>
           </Grid>
         </Slide>
         <Slide direction="left" in={true} timeout={500} mountOnEnter unmountOnExit>
-          <Grid item sm={6} sx={{px: { xs: 2, md: 10 }}}>
-            <Box sx={{ my: {xs: 2, md: 4} }}>
-              <Typography variant="body1" sx={{ pt: 2, textAlign: "justify" }}>
+          <Grid item sm={6} >
+            <Box>
+              <Typography variant="body1" sx={{ textAlign: "justify" }}>
                 {serviceData.pageContent1}
               </Typography>
             </Box>
@@ -59,7 +61,7 @@ const ServiceDetail = ({ id }) => {
                   key={index}
                   sx={{
                     mb: { xs: 2, md: 10 },
-                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.5)'
                   }}
                   defaultExpanded={true}
                 >
