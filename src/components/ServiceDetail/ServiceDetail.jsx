@@ -56,9 +56,8 @@ const ServiceDetail = ({ id }) => {
               </Typography>
             </Box>
             {serviceData.accordianContent.map((accordianItem, index) => (
-              <Box sx={{mb: {xs: 2, md: 6}}}> 
+              <Box sx={{mb: {xs: 2, md: 6}}} key={index}> 
                 <Accordion
-                  key={index}
                   sx={{
                     mb: { xs: 2, md: 10 },
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.5)'
