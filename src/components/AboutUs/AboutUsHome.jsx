@@ -16,16 +16,17 @@ const AboutUsHome = () => {
         {t("about-us.subHeader")}
       </Typography>
 
-      <Grid container>
+      <Box sx={{my: 5}}/>
 
+      <Grid container spacing={4}>
         <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
           <Grid item sm={6}>
-            <Box sx={{ px: { xs: 2, md: 10 }, my: {xs: 2, md: 4} }}>
-              <Typography variant="body1" sx={{ pt: 2, textAlign: "justify" }}>
+            <Box sx={{px: {md: 5}}}>
+              <Typography variant="body1" sx={{ textAlign: "justify" }}>
                 {t("about-us.text1")}
               </Typography>
               
-              <Box sx={{ py: 3, display: "flex", justifyContent: "center" }}>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <CustomButton text={t("about-us.viewMoreButton")} link={"/about-us"} size={"large"}/>
               </Box>
             </Box>
@@ -33,12 +34,14 @@ const AboutUsHome = () => {
         </Slide>
 
         <Slide direction="left" in={true} timeout={500} mountOnEnter unmountOnExit>
-          <Grid item sm={6} sx={{py: {sm: 5, md: 3}, px: {sm: 1} }}>
+          <Grid item sm={6}>
             <ImageCard src={t("about-us.image1")} alt={t("about-us.header")}/>
           </Grid>
         </Slide>
         
       </Grid>
+
+      <Box sx={{my: 2}}/>
     </Box>
   );
 };
