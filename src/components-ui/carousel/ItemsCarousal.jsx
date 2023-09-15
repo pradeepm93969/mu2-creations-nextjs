@@ -71,7 +71,6 @@ export default function ItemsCarousal({items}) {
               textAlign: "center",
               display: "flex",
               justifyContent: "center",
-              mx: {xs: 3, sm: 5, md: 2},
             }}
           >
             {ItemCard({

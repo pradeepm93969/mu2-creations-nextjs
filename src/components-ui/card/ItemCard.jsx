@@ -15,8 +15,7 @@ export default function ItemCard({
   return (
     <Card
       sx={{
-        width: 300,
-        pb: 4,
+        mx: 2,
         mt: { xs: 1, md: 2 },
         mb: { xs: 4, md: 8 },
       }}
@@ -52,8 +51,9 @@ export default function ItemCard({
         >
           {text}
         </Typography>
+        <CustomButton text={buttonText} link={buttonLink} size={"small"} />
       </CardContent>
-      <CustomButton text={buttonText} link={buttonLink} size={"small"} />
+      
     </Card>
   );
 }

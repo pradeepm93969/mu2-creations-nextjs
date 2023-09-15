@@ -10,7 +10,7 @@ const Service = ({ isServicePage }) => {
   const services = t(`childItems`, { returnObjects: true });
 
   return (
-    <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
+    <Box sx={{ px: { xs: 3, md: 30 }, pt: 3, pb: {xs: 3, sm: 0}, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
         {t("header")}
       </Typography>
