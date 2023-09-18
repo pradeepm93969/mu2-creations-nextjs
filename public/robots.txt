@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mu2creations.com
+
+# Sitemaps
+Sitemap: https://www.mu2creations.com/sitemap.xml
