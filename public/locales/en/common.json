@@ -68,7 +68,7 @@
           {"label": "About Us","href": "/about-us"},
           {"label": "Services","href": "/services"},
           {"label": "Contact Us","href": "/contact-us"},
-          {"label": "Site Map","href": "/site-map"}
+          {"label": "Site Map","href": "/sitemap.xml"}
         ]
       },
       "column3": {
