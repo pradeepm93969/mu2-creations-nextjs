@@ -24,7 +24,6 @@ export default function ItemCard({
       <Box
         sx={{
           overflow: "hidden",
-          width: isMobile ? "89vw" : "auto",
           position: "relative",
           height: "250px"
         }}
@@ -33,6 +32,8 @@ export default function ItemCard({
           src={image}
           alt={header}
           fill
+          sizes="100%"
+          style={{objectFit: "contain"}}
         />
       </Box>
       <CardContent>

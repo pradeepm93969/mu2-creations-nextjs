@@ -11,15 +11,16 @@ export default function ImageCard({src, alt}) {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
         borderRadius: "8px",
         overflow: "hidden",
-        width: isMobile ? "89vw" : "auto",
         position: "relative",
-        height: isMobile ? "233px" : "350px"
+        height: isMobile ? "233px" : "350px",
+        width: isMobile ? "89vw" : "auto"
       }}
     >
       <Image
         src={src}
         alt={alt}
         fill
+        sizes="100%"
       />
     </Box>
   );

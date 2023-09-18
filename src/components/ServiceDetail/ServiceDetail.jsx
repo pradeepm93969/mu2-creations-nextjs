@@ -189,7 +189,7 @@ const ServiceDetail = ({ id }) => {
                 }}
                 onClick={() => handleClickOpen(url)}
               >
-                <Image src={url} alt={serviceData.id + "-" + index} fill style={{objectFit: "contain"}}/>
+                <Image src={url} alt={serviceData.id + "-" + index} fill sizes="100%" style={{objectFit: "contain"}}/>
               </Box>
             </Grid>
           ))}
@@ -221,7 +221,7 @@ const ServiceDetail = ({ id }) => {
               backgroundColor: "rgba(0, 0, 0, 0.7)",
             }}
           >
-            <Image src={modalUrl} alt={modalUrl} fill style={{objectFit: "contain"}} />
+            <Image src={modalUrl} alt={modalUrl} fill sizes="100%" style={{objectFit: "contain"}} />
           </Box>
         </Dialog>
       </Box>

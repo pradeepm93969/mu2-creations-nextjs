@@ -12,9 +12,6 @@ export default function CentralImageCarousal({ images }) {
   const isRTL = i18n.language === "ar";
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  const width = isMobile ? 300 : 800; // Adjust dimensions as needed
-  const height = isMobile ? 200 : 200;
-
   const settings = {
     dots: true,
     infinite: true,
@@ -31,21 +28,20 @@ export default function CentralImageCarousal({ images }) {
     >
       <Slider {...settings}>
         {images.map((image, index) => (
-          <Box key={index}>
-            <Link href={image.href} passHref>
-              <Image 
+          <Link href={image.href} passHref key={index}>
+            <Box key={index} sx={{
+              overflow: "hidden",
+              position: "relative",
+              height: "400px"
+            }}>
+              <Image
                 src={image.url}
                 alt={`Slide ${index + 1}`}
-                width={width}
-                height={height}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "fit",
-                }}
+                fill
+                sizes="100%"
               />
-            </Link>
-          </Box>
+            </Box>
+          </Link>
         ))}
       </Slider>
     </Box>
