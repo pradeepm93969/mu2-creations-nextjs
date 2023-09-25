@@ -205,7 +205,7 @@ const MainFooter = () => {
                 {t("company.address")}
               </Typography>
 
-              <Divider
+              {/* <Divider
                 sx={{
                   width: { xs: "100%", md: "75%" },
                   display: { xs: "none", md: "flex" },
@@ -238,7 +238,7 @@ const MainFooter = () => {
                 }}
               >
                 {t("footer.mainFooter.column3.text2")}
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Grid>

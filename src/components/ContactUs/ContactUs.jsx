@@ -162,7 +162,7 @@ const ContactUs = () => {
                 {t("common:company.address")}
               </Typography>
 
-              <Divider
+              {/* <Divider
                 sx={{
                   width: { xs: "100%", md: "75%" },
                   display: { xs: "none", md: "flex" },
@@ -195,7 +195,7 @@ const ContactUs = () => {
                 }}
               >
                 {t("common:footer.mainFooter.column3.text2")}
-              </Typography>
+              </Typography> */}
 
               <Box
                 sx={{
@@ -203,7 +203,7 @@ const ContactUs = () => {
                   justifyContent: { xs: "center", lg: "flex-start" },
                   alignItems: "center",
                   m: 2,
-                  mt: 4,
+                  mt: 3,
                   px: 4,
                 }}
               >

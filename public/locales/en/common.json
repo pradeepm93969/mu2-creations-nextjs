@@ -4,11 +4,11 @@
     "phonenumber": "(055) 118 2021",
     "whatsappNumber": "971551182021",
     "email": "info@mu2creations.com",
-    "address": "Dubai – U.A.E",
-    "facebookLink": "https://facebook.com/mu2-creations",
-    "twitterLink": "https://twitter.com/mu2-creations",
-    "instaLink": "https://instagram.com/mu2-creations",
-    "linkdinLink": "https://linkdin.com/mu2-creations"
+    "address": "Sharjah – U.A.E",
+    "facebookLink": "https://facebook.com/mu2creations",
+    "twitterLink": "https://twitter.com/mu2creations",
+    "instaLink": "https://instagram.com/mu2creations",
+    "linkdinLink": "https://linkdin.com/mu2creations"
   },
 
   "header": {
@@ -52,8 +52,8 @@
       "column1": {
         "label": "SERVICES",
         "childLinks": [
-          {"label": "Offset printing","href": "/offset-printing"},
-          {"label": "Gift item Printing","href": "/gift-item-printing"},
+          {"label": "Signages","href": "/services/signages"},
+          {"label": "Exhibition Stands","href": "/services/exhibition-stands"},
           {"label": "Vehicle branding","href": "/vehicle-branding"},
           {"label": "Metal fabrication","href": "/metal-fabrication"},
           {"label": "Styro works","href": "/styro-works"}
@@ -70,8 +70,6 @@
         ]
       },
       "column3": {
-        "text1": "Our Timing",
-        "text2": "Mon - Fri 8:00 AM to 6:00 PM"
       }
     },
     "bottomFooter": {
