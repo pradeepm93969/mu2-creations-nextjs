@@ -96,7 +96,7 @@ const ServiceDetail = ({ id }) => {
           >
             <Grid item sm={6}>
               <ImageCard
-                src={serviceData.pageImage1}
+                src={serviceData.mainImage}
                 alt={serviceData.header}
               />
             </Grid>

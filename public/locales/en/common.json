@@ -1,10 +1,10 @@
 {
   "company": {
     "name": "MU2 Creations",
-    "phonenumber": "(055) 999 9999",
-    "whatsappNumber": "971559999999",
+    "phonenumber": "(055) 118 2021",
+    "whatsappNumber": "971551182021",
     "email": "info@mu2creations.com",
-    "address": "Al Moosa Tower-1, Sheikh Zayed Road, P.O Box: 62864 DXB, Dubai – U.A.E",
+    "address": "Dubai – U.A.E",
     "facebookLink": "https://facebook.com/mu2-creations",
     "twitterLink": "https://twitter.com/mu2-creations",
     "instaLink": "https://instagram.com/mu2-creations",
@@ -14,7 +14,7 @@
   "header": {
     "topHeader": {
       "enabled": true,
-      "text": "Working Hours: Mon - Fri 8:00 AM to 6:00 PM"
+      "text": "Print with Precision, Create with Passion"
     },
     "mainHeader": {
       "menu": "Menu",
@@ -24,7 +24,6 @@
         "childLinks": [
           {"label": "Offset Printing","href": "/services/offset-printing"},
           {"label": "Gift Item Printing","href": "/services/gift-item-printing"},
-          {"label": "Digital Offset Printing","href": "/services/digital-offset-printing"},
           {"label": "Large Format Printing","href": "/services/large-format-printing"},
           {"label": "Vehicle Branding","href": "/services/vehicle-branding"},
           {"label": "Digital Fabric Printing","href": "/services/digital-fabric-printing"},
@@ -45,8 +44,7 @@
   "footer": {
     "topFooter": {
       "enabled": true,
-      "helpText": "We are here to help:",
-      "emailUs": "Email Us"
+      "helpText": "Help & Support:"
     },
     "mainFooter": {
       "about": "MU2 Creations is a dynamic and innovative company specializing in a wide range of creative services. With a passion for print, design, and fabrication, we bring imagination to life through our diverse offerings.",
@@ -78,9 +76,6 @@
     },
     "bottomFooter": {
       "enabled": true,
-      "termsOfUse": { "label": "Terms of Use", "href": "/terms-of-use" },
-      "privacyPolicy": { "label": "Privacy Policy", "href": "/privacy-policy" },
-      "siteMap": { "label": "Site Map", "href": "/site-map" },
       "developedBy": "Developed by Pradeep Manjunath"
     }
   },
