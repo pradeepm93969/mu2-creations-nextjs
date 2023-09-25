@@ -21,7 +21,7 @@ const Service = ({ isServicePage }) => {
       {!isServicePage ? (
           <ItemsCarousal items={services}/>
       ) : (
-        <Grid container spacing={4}>
+        <Grid container>
             {services.map((service) => (
               <Grid item xs={12} sm={4} md={3} key={service.id} sx={{textAlign: "center", display: "flex", justifyContent: "center"}}>
                 <ItemCard image={service.cardImage} header={service.header} text={service.cardContent} buttonText={t("details")}

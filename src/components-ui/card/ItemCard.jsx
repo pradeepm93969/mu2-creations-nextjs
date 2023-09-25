@@ -48,6 +48,7 @@ export default function ItemCard({
             display: "-webkit-box",
             WebkitLineClamp: "4",
             WebkitBoxOrient: "vertical",
+            minHeight: "calc(1.5em * 4)"
           }}
         >
           {text}
