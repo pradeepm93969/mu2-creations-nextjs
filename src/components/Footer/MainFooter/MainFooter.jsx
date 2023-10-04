@@ -195,8 +195,7 @@ const MainFooter = () => {
                   display: "flex",
                   justifyContent: { xs: "center", sm: "flex-start" },
                   alignItems: "center",
-                  py: { xs: 1, md: 0 },
-                  px: 1,
+                  marginTop: 2, marginLeft: 1,
                   textAlign: "justify",
                   width: { xs: "100%", md: "75%" },
                 }}
