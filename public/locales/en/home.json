@@ -1,14 +1,14 @@
 {
     "heroBanner": {
         "mobile": [
-            {"url": "/img/hero/mobile-1.png", "href": "/"},
-            {"url": "/img/hero/mobile-2.png", "href": "/"},
-            {"url": "/img/hero/mobile-3.png", "href": "/"}
+            {"url": "/img/hero/mobile-1.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/mobile-2.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/mobile-3.png", "href": "/services/flags-and-poles"}
         ],
         "desktop": [
-            {"url": "/img/hero/desktop-1.jpg", "href": "/"},
-            {"url": "/img/hero/desktop-2.png", "href": "/"},
-            {"url": "/img/hero/desktop-3.png", "href": "/"}
+            {"url": "/img/hero/desktop-1.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/desktop-2.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/desktop-3.png", "href": "/services/flags-and-poles"}
         ]
     },
     "about-us": {

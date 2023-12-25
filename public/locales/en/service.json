@@ -114,10 +114,10 @@
             ]
         },
         {
-            "id": "digital-fabric-printing",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
-            "header": "Digital Fabric Printing", 
+            "id": "flags-and-poles",
+            "cardImage": "/img/services/Flags and Poles/flag-and-pole-14.jpg",
+            "mainImage": "/img/services/Flags and Poles/flag-and-pole-14.jpg",
+            "header": "Flags & Poles", 
             "subHeader": "Unleash Vibrant Creativity on Flags and Poles",
             "cardContent": "Printing designs directly onto fabrics, speciﬁcally for ﬂags and ﬂagpoles.",
             "pageContent1": "Discover the limitless possibilities of digital fabric printing at MU2 Creations, where advanced technology and expertise bring your designs to life on fabric with stunning clarity and vibrant colors.",
@@ -129,12 +129,21 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Flags and Poles/flag-and-pole-1.png",
+                "/img/services/Flags and Poles/flag-and-pole-2.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-3.png",
+                "/img/services/Flags and Poles/flag-and-pole-4.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-5.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-6.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-7.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-8.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-9.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-10.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-11.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-12.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-13.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-14.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-15.jpg"
             ]
         },
         {
