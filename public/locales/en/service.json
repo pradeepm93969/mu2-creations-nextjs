@@ -95,8 +95,8 @@
         },
         {
             "id": "vehicle-branding",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Vehicle Branding/vehicle-branding-2.jpeg",
+            "mainImage": "/img/services/Vehicle Branding/vehicle-branding-1.png",
             "header": "Vehicle Branding", 
             "subHeader": "Drive Your Message with Impact",
             "cardContent": "Applying custom graphics, logos, and designs onto vehicles for advertising purposes.",
@@ -105,12 +105,17 @@
             "accordianContent": [
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Vehicle Branding/vehicle-branding-1.png",
+                "/img/services/Vehicle Branding/vehicle-branding-2.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-3.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-4.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-5.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-6.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-7.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-8.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-9.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-10.jpeg",
+                "/img/services/Vehicle Branding/vehicle-branding-11.jpeg"
             ]
         },
         {
@@ -219,8 +224,8 @@
         },
         {
             "id": "inflatable-structures",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Inflatable Structures/inflatable-structures-1.jpeg",
+            "mainImage": "/img/services/Inflatable Structures/inflatable-structures-2.jpeg",
             "header": "Inflatable Structures", 
             "subHeader": "Eye-Catching, Versatile, and Portable Solutions",
             "cardContent": "Designing and manufacturing inﬂatable structures for indoor and outdoor advertising.",
@@ -233,12 +238,11 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Inflatable Structures/inflatable-structures-1.jpeg",
+                "/img/services/Inflatable Structures/inflatable-structures-2.jpeg",
+                "/img/services/Inflatable Structures/inflatable-structures-3.jpeg",
+                "/img/services/Inflatable Structures/inflatable-structures-4.jpeg",
+                "/img/services/Inflatable Structures/inflatable-structures-5.png"
             ]
         },
         {

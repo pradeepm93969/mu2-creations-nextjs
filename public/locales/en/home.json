@@ -1,14 +1,14 @@
 {
     "heroBanner": {
         "mobile": [
-            {"url": "/img/hero/mobile-1.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/mobile-1.png", "href": "/services/vehicle-branding"},
             {"url": "/img/hero/mobile-2.png", "href": "/services/flags-and-poles"},
-            {"url": "/img/hero/mobile-3.png", "href": "/services/flags-and-poles"}
+            {"url": "/img/hero/mobile-3.png", "href": "/services/inflatable-structures"}
         ],
         "desktop": [
-            {"url": "/img/hero/desktop-1.png", "href": "/services/flags-and-poles"},
+            {"url": "/img/hero/desktop-1.png", "href": "/services/vehicle-branding"},
             {"url": "/img/hero/desktop-2.png", "href": "/services/flags-and-poles"},
-            {"url": "/img/hero/desktop-3.png", "href": "/services/flags-and-poles"}
+            {"url": "/img/hero/desktop-3.png", "href": "/services/inflatable-structures"}
         ]
     },
     "about-us": {
