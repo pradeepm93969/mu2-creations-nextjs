@@ -71,8 +71,8 @@
         },
         {
             "id": "large-format-printing",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Large Format Printing/large-format-printing-1.jpeg",
+            "mainImage": "/img/services/Large Format Printing/large-format-printing-1.jpeg",
             "header": "Large Format Printing", 
             "subHeader": "Making a Big Impact with Stunning Visuals",
             "cardContent": "Printing on a larger scale, typically used for posters, banners, and other promotional materials.",
@@ -85,12 +85,16 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Large Format Printing/large-format-printing-1.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-2.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-3.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-4.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-5.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-6.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-7.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-8.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-9.jpeg",
+                "/img/services/Large Format Printing/large-format-printing-10.jpeg"
             ]
         },
         {
@@ -153,8 +157,8 @@
         },
         {
             "id": "signages",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Signages/signages-1.jpeg",
+            "mainImage": "/img/services/Signages/signages-1.jpeg",
             "header": "Signages", 
             "subHeader": "Command Attention with Effective Visual Communication",
             "cardContent": "Creating and producing various types of signs for businesses, including indoor and outdoor.",
@@ -167,12 +171,18 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Signages/signages-1.jpeg",
+                "/img/services/Signages/signages-2.jpeg",
+                "/img/services/Signages/signages-3.jpeg",
+                "/img/services/Signages/signages-4.jpeg",
+                "/img/services/Signages/signages-5.jpeg",
+                "/img/services/Signages/signages-6.jpeg",
+                "/img/services/Signages/signages-7.jpeg",
+                "/img/services/Signages/signages-8.jpeg",
+                "/img/services/Signages/signages-9.jpeg",
+                "/img/services/Signages/signages-10.jpeg",
+                "/img/services/Signages/signages-11.jpeg",
+                "/img/services/Signages/signages-12.jpeg"
             ]
         },
         {
@@ -292,8 +302,8 @@
         },
         {
             "id": "styro-works",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Styro Works/styro-works-1.jpeg",
+            "mainImage": "/img/services/Styro Works/styro-works-1.jpeg",
             "header": "Styro Works", 
             "subHeader": "Creating Lightweight and Versatile Solutions",
             "cardContent": "Utilizing Styrofoam or expanded polystyrene (EPS) to create unique structures, props, and displays.",
@@ -306,12 +316,15 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Styro Works/styro-works-1.jpeg",
+                "/img/services/Styro Works/styro-works-2.jpeg",
+                "/img/services/Styro Works/styro-works-3.jpeg",
+                "/img/services/Styro Works/styro-works-4.jpeg",
+                "/img/services/Styro Works/styro-works-5.jpeg",
+                "/img/services/Styro Works/styro-works-6.jpeg",
+                "/img/services/Styro Works/styro-works-7.jpeg",
+                "/img/services/Styro Works/styro-works-8.jpeg",
+                "/img/services/Styro Works/styro-works-9.jpeg"
             ]
         }
     ]
