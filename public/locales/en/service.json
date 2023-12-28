@@ -214,25 +214,6 @@
             ]
         },
         {
-            "id": "art-and-artifacts",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
-            "header": "Art & Artifacts", 
-            "subHeader": "Transforming Spaces with Creativity and Culture",
-            "cardContent": "Producing & showcasing artistic creations and artifacts, like paintings, sculptures, & other forms of visual art.",
-            "pageContent1": "At MU2 Creations, we offer a diverse range of art and artifacts that add beauty, intrigue, and cultural richness to any space. Our collection showcases the work of talented artists and artisans, bringing together creativity, craftsmanship, and a celebration of different cultures.",
-            "pageContent2": "Whether you're looking to enhance your home, ofﬁce, or public space, our art and artifacts are carefully curated to inspire",
-            "accordianContent": [],
-            "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
-            ]
-        },
-        {
             "id": "inflatable-structures",
             "cardImage": "/img/services/Inflatable Structures/inflatable-structures-1.jpeg",
             "mainImage": "/img/services/Inflatable Structures/inflatable-structures-2.jpeg",
@@ -269,27 +250,6 @@
                     "header": "Range of Metal Products",
                     "content": "We create decorative metal pieces, such as furniture, ﬁxtures, and signage, combining  functionality with artistic craftsmanship. With our custom metal fabrication capabilities, we can deliver unique and tailored products to meet our clients' speciﬁc requirements and preferences."
                 }
-            ],
-            "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
-            ]
-        },
-        {
-            "id": "lenticular-printing",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
-            "header": "Lenticular Printing", 
-            "subHeader": "Captivating Visual Experiences",
-            "cardContent": "Produces images with an illusion of depth or motion when viewed from different angles.",
-            "pageContent1": "We specialize in lenticular printing, a cutting-edge technique that brings images to life with captivating visual effects.",
-            "pageContent2": "Lenticular printing allows us to create prints that change or animate as the viewer moves, providing an engaging and memorable experience that captures attention and leaves a lasting impression.",
-            "accordianContent": [
-                
             ],
             "galleryImages": [
                 "/img/services/offset-printing-1.png",
