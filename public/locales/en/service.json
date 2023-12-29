@@ -6,14 +6,14 @@
     "gallery": "Image Gallery",
     "childItems": [
         {
-            "id": "offset-printing",
+            "id": "offset-and-gift-item-printing",
             "cardImage": "/img/hero/mobile-2.png",
             "mainImage": "/img/hero/desktop-2.png",
-            "header": "Offset Printing", 
-            "subHeader": "Delivering High-Quality Print Solutions",
-            "cardContent": "This involves traditional printing methods using plates to transfer ink onto paper or other materials.",
+            "header": "Offset & Gift Item Printing", 
+            "subHeader": "Personalized Creations for Memorable Moments",
+            "cardContent": "Personalized mugs, engraved plaques, custom gift sets, and unique keepsakes",
             "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
-            "pageContent2": "",
+            "pageContent2": "Whether you're looking for personalized mugs, custom t-shirts, engraved plaques, or printed photo frames, our gift items printing services offer a wide range of options to suit every occasion and recipient. From birthdays and weddings to corporate events and promotional giveaways, we help you make a statement and leave a lasting impression with our high-quality printing services.",
             "accordianContent": [
                 {
                     "header": "Range of Applications",
@@ -22,27 +22,7 @@
                 {
                     "header": "Printing Capabilities",
                     "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
-                }
-            ],
-            "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
-            ]
-        },
-        {
-            "id": "gift-item-printing",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
-            "header": "Gift Items Printing", 
-            "subHeader": "Personalized Creations for Memorable Moments",
-            "cardContent": "Personalized mugs, engraved plaques, custom gift sets, and unique keepsakes.",
-            "pageContent1": "Whether you're looking for personalized mugs, custom t-shirts, engraved plaques, or printed photo frames, our gift items printing services offer a wide range of options to suit every occasion and recipient.",
-            "pageContent2": "From birthdays and weddings to corporate events and promotional giveaways, we help you make a statement and leave a lasting impression with our high-quality printing services.",
-            "accordianContent": [
+                },
                 {
                     "header": "Wide Range of Gift Items",
                     "content": ""
@@ -238,8 +218,8 @@
         },
         {
             "id": "metal-fabrication",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Metal Fabrications/metal-fabrications-1.jpeg",
+            "mainImage": "/img/services/Metal Fabrications/metal-fabrications-1.jpeg",
             "header": "Metal Fabrication", 
             "subHeader": "Crafting Precision and Durability",
             "cardContent": "Crafting and shaping metal materials to create custom structures, signage, or decorative pieces.",
@@ -252,12 +232,15 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Metal Fabrications/metal-fabrications-1.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-2.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-3.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-4.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-5.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-6.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-7.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-8.jpeg",
+                "/img/services/Metal Fabrications/metal-fabrications-9.jpeg"
             ]
         },
         {
