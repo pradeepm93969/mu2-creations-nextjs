@@ -218,8 +218,8 @@
         },
         {
             "id": "metal-fabrication",
-            "cardImage": "/img/services/Metal Fabrications/metal-fabrications-1.jpeg",
-            "mainImage": "/img/services/Metal Fabrications/metal-fabrications-1.jpeg",
+            "cardImage": "/img/services/Metal Fabrication/metal-fabrication-1.jpeg",
+            "mainImage": "/img/services/Metal Fabrication/metal-fabrication-1.jpeg",
             "header": "Metal Fabrication", 
             "subHeader": "Crafting Precision and Durability",
             "cardContent": "Crafting and shaping metal materials to create custom structures, signage, or decorative pieces.",
