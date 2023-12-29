@@ -22,7 +22,7 @@
         {"label": "Home","href": "/"},
         {"label": "Services","href": "/services", 
         "childLinks": [
-          {"label": "Offset & Gift Item Printing","href": "/services/offset-and-gift-item-printing"},
+          {"label": "Offset & Gift Item","href": "/services/offset-and-gift-item-printing"},
           {"label": "Large Format Printing","href": "/services/large-format-printing"},
           {"label": "Vehicle Branding","href": "/services/vehicle-branding"},
           {"label": "Flags & Poles","href": "/services/flags-and-poles"},
