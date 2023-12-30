@@ -167,8 +167,8 @@
         },
         {
             "id": "exhibition-stands",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Exibition Stands/exibition-stand-1.jpeg",
+            "mainImage": "/img/services/Exibition Stands/exibition-stand-1.jpeg",
             "header": "Exhibition Stands", 
             "subHeader": "Showcase Your Brand with Distinctive Elegance",
             "cardContent": "Designing and constructing wooden exhibition stands for trade shows, events, and exhibitions.",
@@ -185,12 +185,25 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Exibition Stands/exibition-stand-1.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-2.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-3.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-4.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-5.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-6.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-7.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-8.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-9.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-10.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-11.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-12.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-13.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-14.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-15.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-16.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-17.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-18.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-19.jpeg"
             ]
         },
         {
