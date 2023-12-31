@@ -7,8 +7,8 @@
     "childItems": [
         {
             "id": "offset-and-gift-item-printing",
-            "cardImage": "/img/hero/mobile-2.png",
-            "mainImage": "/img/hero/desktop-2.png",
+            "cardImage": "/img/services/Offset and Gift Item/offset-and-gift-item-1.jpeg",
+            "mainImage": "/img/services/Offset and Gift Item/offset-and-gift-item-1.jpeg",
             "header": "Offset & Gift Item Printing", 
             "subHeader": "Personalized Creations for Memorable Moments",
             "cardContent": "Personalized mugs, engraved plaques, custom gift sets, and unique keepsakes",
@@ -41,12 +41,12 @@
                 }
             ],
             "galleryImages": [
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png",
-                "/img/services/offset-printing-1.png",
-                "/img/services/offset-printing-2.png",
-                "/img/services/offset-printing-3.png"
+                "/img/services/Offset and Gift Item/offset-and-gift-item-1.jpeg",
+                "/img/services/Offset and Gift Item/offset-and-gift-item-2.jpeg",
+                "/img/services/Offset and Gift Item/offset-and-gift-item-3.jpeg",
+                "/img/services/Offset and Gift Item/offset-and-gift-item-4.jpeg",
+                "/img/services/Offset and Gift Item/offset-and-gift-item-5.jpeg",
+                "/img/services/Offset and Gift Item/offset-and-gift-item-6.jpeg"
             ]
         },
         {
@@ -104,8 +104,8 @@
         },
         {
             "id": "flags-and-poles",
-            "cardImage": "/img/services/Flags and Poles/flag-and-pole-14.jpg",
-            "mainImage": "/img/services/Flags and Poles/flag-and-pole-14.jpg",
+            "cardImage": "/img/services/Flags and Poles/flag-and-pole-16.jpeg",
+            "mainImage": "/img/services/Flags and Poles/flag-and-pole-16.jpeg",
             "header": "Flags & Poles", 
             "subHeader": "Unleash Vibrant Creativity on Flags and Poles",
             "cardContent": "Printing designs directly onto fabrics, speciﬁcally for ﬂags and ﬂagpoles.",
@@ -132,7 +132,8 @@
                 "/img/services/Flags and Poles/flag-and-pole-12.jpg",
                 "/img/services/Flags and Poles/flag-and-pole-13.jpg",
                 "/img/services/Flags and Poles/flag-and-pole-14.jpg",
-                "/img/services/Flags and Poles/flag-and-pole-15.jpg"
+                "/img/services/Flags and Poles/flag-and-pole-15.jpg",
+                "/img/services/Flags and Poles/flag-and-pole-16.jpeg"
             ]
         },
         {
@@ -167,8 +168,8 @@
         },
         {
             "id": "exhibition-stands",
-            "cardImage": "/img/services/Exibition Stands/exibition-stand-1.jpeg",
-            "mainImage": "/img/services/Exibition Stands/exibition-stand-1.jpeg",
+            "cardImage": "/img/services/Exibition Stands/exibition-stand-20.jpeg",
+            "mainImage": "/img/services/Exibition Stands/exibition-stand-20.jpeg",
             "header": "Exhibition Stands", 
             "subHeader": "Showcase Your Brand with Distinctive Elegance",
             "cardContent": "Designing and constructing wooden exhibition stands for trade shows, events, and exhibitions.",
@@ -203,7 +204,8 @@
                 "/img/services/Exibition Stands/exibition-stand-16.jpeg",
                 "/img/services/Exibition Stands/exibition-stand-17.jpeg",
                 "/img/services/Exibition Stands/exibition-stand-18.jpeg",
-                "/img/services/Exibition Stands/exibition-stand-19.jpeg"
+                "/img/services/Exibition Stands/exibition-stand-19.jpeg",
+                "/img/services/Exibition Stands/exibition-stand-20.jpeg"
             ]
         },
         {
