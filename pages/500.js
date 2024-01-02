@@ -8,7 +8,6 @@ import CenterErrorCard from "../src/components-ui/card/CenterErrorCard";
 
 export default function Custom500() {
   const { t } = useTranslation("common");
-
   return (
     <Box
       sx={{
