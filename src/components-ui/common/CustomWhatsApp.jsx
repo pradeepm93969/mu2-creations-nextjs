@@ -5,7 +5,7 @@ import React from "react";
 export default function CustomWhatsApp({phoneNumber}) {
 
   const handleLinkClick = (phoneNumber) => {
-    window.open("https://wa.me/" + phoneNumber + "?text=");
+    window.open("https://wa.me/" + phoneNumber + "?text=",  '_self');
   };
 
   return (

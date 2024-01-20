@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CustomEmail({ emailAddress }) {
   const handleLinkClick = (emailAddress) => {
-    window.open("mailto:" + emailAddress);
+    window.open("mailto:" + emailAddress, '_self');
   };
 
   return (
