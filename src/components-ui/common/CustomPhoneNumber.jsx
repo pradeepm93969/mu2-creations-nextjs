@@ -5,7 +5,7 @@ import React from "react";
 export default function CustomPhoneNumber({phoneNumber}) {
 
   const handleLinkClick = (phoneNumber) => {
-    window.open("tel:" + phoneNumber);
+    window.open("tel:" + phoneNumber, '_self');
   };
 
   return (
