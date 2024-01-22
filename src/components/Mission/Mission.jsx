@@ -18,7 +18,7 @@ const Mission = () => {
 
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const isTab = useMediaQuery((theme) => theme.breakpoints.down("md"));
-  const spacing = isMobile ? 0 : isTab ? 1 : 15;
+  const spacing = isMobile ? 0 : isTab ? 1 : 5;
 
   const CustomCard = ({ header, text, backgroundColor }) => (
     <Box
@@ -31,6 +31,7 @@ const Mission = () => {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
         overflow: "hidden",
         borderRadius: 4,
+        maxWidth: "400px"
       }}
     >
       <Grid container>
@@ -87,7 +88,7 @@ const Mission = () => {
   return (
     <Box
       sx={{
-        px: { xs: 3, md: 40 },
+        px: { xs: 3, md: 10 },
         py: 3,
         maxWidth: "100%",
         backgroundColor: "#eceff1",
@@ -115,8 +116,7 @@ const Mission = () => {
 
       <Grid
         container
-        sx={{ display: "flex", justifyContent: "center" }}
-        spacing={spacing}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
         {items.map((item, index) => (
           <Grid
@@ -128,6 +128,7 @@ const Mission = () => {
               display: "flex",
               justifyContent: "center",
               mb: 2,
+              px:1
             }}
             key={item.header}
           >

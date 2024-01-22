@@ -10,7 +10,7 @@ const Service = ({ isServicePage }) => {
   const services = t(`childItems`, { returnObjects: true });
 
   return (
-    <Box sx={{ px: { xs: 3, md: 30 }, pt: 3, pb: {xs: 3, sm: 0}, maxWidth: "100%" }}>
+    <Box sx={{ px: { xs: 3, md: 10 }, pt: 3, pb: {xs: 3, sm: 0}, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
         {t("header")}
       </Typography>
@@ -23,7 +23,7 @@ const Service = ({ isServicePage }) => {
       ) : (
         <Grid container>
             {services.map((service) => (
-              <Grid item xs={12} sm={4} md={3} key={service.id} sx={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+              <Grid item xs={12} sm={4} lg={3} key={service.id} sx={{textAlign: "center", display: "flex", justifyContent: "center"}}>
                 <ItemCard image={service.cardImage} header={service.header} text={service.cardContent} buttonText={t("details")}
                 buttonLink={"/services/" + service.id} />
               </Grid>

@@ -8,7 +8,7 @@ const AboutUsHome = () => {
   const { t } = useTranslation("home");
   
   return (
-    <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
+    <Box sx={{ px: { xs: 3, md: 10 }, py: 3, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
         {t("about-us.header")}
       </Typography>

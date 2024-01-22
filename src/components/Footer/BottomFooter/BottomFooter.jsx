@@ -10,7 +10,7 @@ const BottomFooter = () => {
   return (
     <>
       {bottomFooterEnabled && (
-        <Box sx={{ px: {xs:0, sm:20}, backgroundColor: "grey.900", color: "common.white" }}>
+        <Box sx={{ px: {xs:0, sm:10}, backgroundColor: "grey.900", color: "common.white" }}>
 
         <Divider sx={{ mx: 2 }} color="white" flexItem />
 
@@ -27,7 +27,7 @@ const BottomFooter = () => {
                 textAlign: "center"
               }}
             >
-              <Typography variant="body1" sx={{py: {xs:2, lg:0}}}>
+              <Typography variant="body1" >
                   © {t("company.name")} {new Date().getFullYear()} - {t("footer.bottomFooter.developedBy")} 
               </Typography>
             </Grid>

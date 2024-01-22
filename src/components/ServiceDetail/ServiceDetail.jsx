@@ -63,7 +63,7 @@ const ServiceDetail = ({ id }) => {
         description={serviceData.pageContent1}
       />
 
-      <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
+      <Box sx={{ px: { xs: 3, md: 10 }, py: 3, maxWidth: "100%" }}>
         <Typography
           variant="h2"
           color="primary.dark"

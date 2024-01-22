@@ -17,32 +17,36 @@ const MainFooter = () => {
       <Box
         sx={{
           py: 2,
-          px: { xs: 0, md: 20 },
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
           backgroundColor: "grey.900",
           color: "common.white",
         }}
       >
-        <Grid container px={3} display={"flex"}>
+        <Grid container sx={{display: "flex", mx: 1}}>
+          <Grid
+            item md={1}/>
           <Grid
             item
             xs={12}
             sm={6}
-            md={4}
+            md={3}
             sx={{
               py: 2,
               display: "flex",
-              justifyContent: { xs: "center", sm: "flex-start" },
+              justifyContent: "center",
+              flexDirection: "column"
             }}
           >
-            <Box sx={{ width: "100%" }}>
               <Typography
                 variant="h2"
                 sx={{
                   pb: 2,
-                  px: 2,
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
+                  justifyContent: { xs: "flex-start"},
                   fontWeight: "Bold",
+                  mx:2
                 }}
               >
                 {t("company.name")}
@@ -51,9 +55,8 @@ const MainFooter = () => {
               <Typography
                 variant="body1"
                 sx={{
-                  px: 2,
                   display: "flex",
-                  justifyContent: { xs: "center", lg: "flex-start" },
+                  justifyContent: { xs: "center" },
                   maxHeight: "calc(1.5em * 6)",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
@@ -61,7 +64,8 @@ const MainFooter = () => {
                   WebkitLineClamp: 6, // for Safari support
                   WebkitBoxOrient: "vertical", // for Safari support}>
                   textAlign: "justify",
-                  width: { xs: "100%", md: "75%" },
+                  width: { xs: "90%", md: "75%" },
+                  mx:2
                 }}
               >
                 {t("footer.mainFooter.about")}
@@ -73,7 +77,6 @@ const MainFooter = () => {
                 instagramLink={t("company.instaLink")}
                 twitterLink={t("company.twitterLink")}
               />
-            </Box>
           </Grid>
 
           <Divider
@@ -90,7 +93,6 @@ const MainFooter = () => {
             md={2}
             sx={{
               py: 2,
-              px: { xs: 0, md: 2 },
               display: "flex",
               justifyContent: { xs: "center", lg: "flex-start" },
             }}
@@ -112,7 +114,6 @@ const MainFooter = () => {
             md={2}
             sx={{
               py: 2,
-              px: { xs: 0, md: 2 },
               display: "flex",
               justifyContent: { xs: "center", lg: "flex-start" },
             }}
@@ -131,10 +132,9 @@ const MainFooter = () => {
             item
             xs={12}
             sm={6}
-            md={4}
+            md={3}
             sx={{
               py: 2,
-              px: { xs: 0, md: 6 },
               display: "flex",
               justifyContent: { xs: "center", sm: "flex-start" },
             }}
@@ -240,6 +240,9 @@ const MainFooter = () => {
               </Typography> */}
             </Box>
           </Grid>
+
+          <Grid
+            item md={1}/>
         </Grid>
       </Box>
     </>

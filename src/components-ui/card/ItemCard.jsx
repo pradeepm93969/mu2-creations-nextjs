@@ -18,6 +18,7 @@ export default function ItemCard({
         mx: 2,
         mt: { xs: 1, md: 2 },
         mb: { xs: 4, md: 8 },
+        maxWidth: "330px",
       }}
       raised
     >

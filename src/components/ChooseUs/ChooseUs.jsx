@@ -22,7 +22,7 @@ const ChooseUs = () => {
 
   const CustomCard = ({ header, text, backgroundColor }) => {
     return (
-      <Card raised>
+      <Card raised sx={{maxWidth: "400px"}}>
         <CardHeader
           sx={{
             background:
@@ -33,6 +33,7 @@ const ChooseUs = () => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            
           }}
           title={
             <Typography variant="h4" sx={{ fontWeight: "bold" }}>
@@ -50,7 +51,7 @@ const ChooseUs = () => {
   return (
     <Box
       sx={{
-        px: { xs: 3, md: 40 },
+        px: { xs: 3, md: 10 },
         py: 3,
         maxWidth: "100%",
         backgroundColor: "#eceff1",
@@ -76,7 +77,7 @@ const ChooseUs = () => {
         {t("why-choose-us.subHeader")}
       </Typography>
 
-      <Grid container sx={{ display: "flex", justifyContent: "center", pb: 2 }} spacing={spacing}>
+      <Grid container sx={{ display: "flex", justifyContent: "center", pb: 2 }}>
         {items.map((item, index) => (
           <Grid
             item
@@ -87,6 +88,7 @@ const ChooseUs = () => {
               display: "flex",
               justifyContent: "center",
               mb: 2,
+              px:1
             }}
             key={item.header}
           >

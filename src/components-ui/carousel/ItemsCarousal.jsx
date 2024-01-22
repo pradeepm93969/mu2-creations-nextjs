@@ -14,6 +14,7 @@ export default function ItemsCarousal({items}) {
   const isRTL = i18n.language === "ar";
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const isTab = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const isPc = useMediaQuery((theme) => theme.breakpoints.down("lg"));
 
   const width = isMobile ? 300 : 800; // Adjust dimensions as needed
   const height = isMobile ? 500 : 300;
@@ -52,7 +53,7 @@ export default function ItemsCarousal({items}) {
   const settings = {
     dots: isMobile,
     infinite: true,
-    slidesToShow: isMobile ? 1 : (isTab ? 2 : 4),
+    slidesToShow: isMobile ? 1 : (isTab ? 2 : (isPc ? 3 : 4)),
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -63,7 +64,7 @@ export default function ItemsCarousal({items}) {
 
   return (
     <Box sx={{ px: { xs: 1, md: 8 } }}>
-      <Slider {...settings}>
+      <Slider {...settings} >
         {items.map((item, index) => (
           <Box
             key={index}

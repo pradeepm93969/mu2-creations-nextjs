@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, AppBar, Grid } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import LanguageDropdown from "./LanguageDropdown";
 import CustomPhoneNumber from "../../../components-ui/common/CustomPhoneNumber";
@@ -13,40 +13,56 @@ const TopHeader = () => {
   return (
     <>
       {topHeaderEnabled && (
-        <AppBar position="static">
-          <Grid
-            container
+          <Box
             sx={{
               height: "40px",
               backgroundColor: "grey.900",
               color: "common.white",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-evenly",
               alignItems: "center",
             }}
           >
-            <Grid
-              item xs={12} md={5}
-              sx={{ display: "flex", justifyContent: { xs: "center", md: "flex-start" }, paddingX: {xs: 0, md: 6} }}
+            <Box
+              sx={{ display: "flex", justifyContent: { xs: "center", md: "flex-start" }}}
             >
               <Typography variant="body1" noWrap>
                 {t("header.topHeader.text")}
               </Typography>
-            </Grid>
+            </Box>
 
-            <Grid item md={5}
+            <Box 
               sx={{
                 display: { xs: "none", md: "flex" },
-                justifyContent: "space-around",
               }}
             >
               <CustomPhoneNumber phoneNumber={t("company.phonenumber")} />
+              
+            </Box>
+            
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" }
+              }}
+            >
               <CustomEmail emailAddress={t("company.email")} />
-              {/* <LanguageDropdown /> */}
+              
+            </Box>
+
+            <Box item md={6}
+              sx={{
+                display: { xs: "none", md: "flex" }
+              }}
+            >
               <CustomWhatsApp phoneNumber={t("company.whatsappNumber")} />
-            </Grid>
-          </Grid>
-        </AppBar>
+              
+            </Box>
+
+
+            
+              {/* <LanguageDropdown /> */}
+              
+          </Box>
       )}
     </>
   );

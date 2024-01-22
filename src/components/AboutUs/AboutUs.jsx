@@ -8,7 +8,7 @@ const AboutUs = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ px: { xs: 3, md: 30 }, py: 3, maxWidth: "100%" }}>
+    <Box sx={{ px: { xs: 3, md: 10 }, py: 3, maxWidth: "100%" }}>
       <Typography variant="h2" color="primary.dark" sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}>
         {t("about-us.header")}
       </Typography>
@@ -22,7 +22,7 @@ const AboutUs = () => {
         <Slide direction="right" in={true} timeout={500} mountOnEnter unmountOnExit>
           <Grid item sm={6}>
             <Box >
-              <Typography variant="body1" sx={{ px: {md: 10}, textAlign: "justify" }}>
+              <Typography variant="body1" sx={{ px: {md: 2}, textAlign: "justify" }}>
                 {t("about-us.text1")}
               </Typography>
             </Box>
@@ -46,7 +46,7 @@ const AboutUs = () => {
         <Slide direction="left" in={true} timeout={500} mountOnEnter unmountOnExit>
           <Grid item sm={6}>
             <Box >
-              <Typography variant="body1" sx={{ px: {md: 10}, textAlign: "justify" }}>
+              <Typography variant="body1" sx={{ px: {md: 2}, textAlign: "justify" }}>
                 {t("about-us.text2")}
               </Typography>
             </Box>

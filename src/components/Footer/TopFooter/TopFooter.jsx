@@ -15,10 +15,9 @@ const TopFooter = () => {
         <Box
           py={2}
           sx={{
-            paddingX: {xs: 0, md: 50},
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-around",
+            justifyContent: "space-evenly",
             backgroundColor: "primary.main",
             color: "common.white",
           }}
@@ -30,7 +29,7 @@ const TopFooter = () => {
           >
             {t("footer.topFooter.helpText")}
           </Typography>
-
+          <Box/>
           <CustomPhoneNumber phoneNumber={t("company.phonenumber")} />
           <Divider color="white" orientation="vertical" flexItem />
           <CustomEmail emailAddress={t("company.email")} />
