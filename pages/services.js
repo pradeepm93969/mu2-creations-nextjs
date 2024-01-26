@@ -3,10 +3,14 @@ import { Box } from '@mui/material';
 import MainLayout from '../src/layouts/MainLayout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Service from '../src/components/Service/Service';
+import Head from 'next/head';
 
 export default function Services() {
   return (
     <Box sx={{maxWidth: "100%", mt: "96px"}}>
+      <Head>
+        <link rel="canonical" href="https://www.mu2creations.com/services"></link>
+      </Head>
       <Service isServicePage/>
     </Box>
   );

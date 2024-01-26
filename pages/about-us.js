@@ -3,10 +3,14 @@ import { Box } from '@mui/material';
 import MainLayout from '../src/layouts/MainLayout';
 import AboutUsComp from '../src/components/AboutUs/AboutUs';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 export default function AboutUs() {
   return (
     <Box sx={{maxWidth: "100%", mt: "96px"}}>
+      <Head>
+        <link rel="canonical" href="https://www.mu2creations.com/about-us"></link>
+      </Head>
       <AboutUsComp isAboutUs/>
     </Box>
   );

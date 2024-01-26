@@ -59,6 +59,7 @@ export default class MyDocument extends Document {
             }}
           />
           <meta name="emotion-insertion-point" content="" />
+          <meta name="robots" content="index, follow"/>
           {emotionStyleTags}
         </Head>
         <body>

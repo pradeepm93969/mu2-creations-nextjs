@@ -3,10 +3,14 @@ import { Box } from '@mui/material';
 import MainLayout from '../src/layouts/MainLayout';
 import ContactUsComp from '../src/components/ContactUs/ContactUs';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 export default function ContactUs() {
   return (
     <Box sx={{maxWidth: "100%", mt: "96px", backgroundColor: "#eceff1",}}>
+      <Head>
+        <link rel="canonical" href="https://www.mu2creations.com/contact-us"></link>
+      </Head>
       <ContactUsComp/>
     </Box>
   );

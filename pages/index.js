@@ -7,10 +7,14 @@ import Mission from '../src/components/Mission/Mission';
 import ChooseUs from '../src/components/ChooseUs/ChooseUs';
 import Service from '../src/components/Service/Service';
 import AboutUsHome from '../src/components/AboutUs/AboutUsHome';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <Box sx={{maxWidth: "100%", mt: "96px"}}>
+      <Head>
+        <link rel="canonical" href="https://www.mu2creations.com"></link>
+      </Head>
       <HeroBanner/>
       <Service/>
       <ChooseUs/>
