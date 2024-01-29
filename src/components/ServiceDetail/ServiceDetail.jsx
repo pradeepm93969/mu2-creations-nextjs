@@ -122,37 +122,43 @@ const ServiceDetail = ({ id }) => {
                   {serviceData.pageContent2}
                 </Typography>
               </Box>
-              {serviceData.accordianContent.map((accordianItem, index) => (
-                <Box sx={{ mb: { xs: 2, md: 6 } }} key={index}>
-                  <Accordion
-                    sx={{
-                      mb: { xs: 2, md: 10 },
-                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
-                    }}
-                    defaultExpanded={true}
-                  >
-                    <AccordionSummary
-                      expandIcon={<ExpandMore sx={{ color: "common.white" }} />}
-                      aria-controls={`panel${index}-content`}
-                      id={`panel${index}-header`}
-                      sx={{
-                        backgroundColor: "primary.dark",
-                      }}
-                    >
-                      <Typography variant="h5" color="common.white">
-                        {t(accordianItem.header)}
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography variant="body1" color="text.primary">
-                        {t(accordianItem.content)}
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                </Box>
-              ))}
+              
             </Grid>
           </Slide>
+        </Grid>
+
+
+        <Grid container spacing={6} py={5}>
+        {serviceData.accordianContent.map((accordianItem, index) => (
+          <Grid item xs={12} sm={4} lg={3} key={index} sx={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+            <Accordion
+              sx={{
+                width: "100%",
+                mb: { xs: 2, md: 10 },
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
+              }}
+              defaultExpanded={true}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMore sx={{ color: "common.white" }} />}
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
+                sx={{
+                  backgroundColor: "primary.dark",
+                }}
+              >
+                <Typography variant="h5" color="common.white">
+                  {t(accordianItem.header)}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography variant="body1" color="text.primary" textAlign={"justify"}>
+                  {t(accordianItem.content)}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+        ))}
         </Grid>
 
         <Typography
