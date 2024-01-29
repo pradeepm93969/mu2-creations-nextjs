@@ -33,6 +33,7 @@
           {"label": "Styro Works","href": "/services/styro-works"}
         ]},
         {"label": "About Us","href": "/about-us"},
+        {"label": "Blogs","href": "/blogs"},
         {"label": "Contact Us","href": "/contact-us"}
       ]
     }

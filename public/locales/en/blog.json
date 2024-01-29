@@ -1,0 +1,15 @@
+{
+    "header": "Blogs",
+    "subHeader": "Explore the World of Precision and Perfection with Our Digital Printing Solutions",
+    "details": "Read More...",
+    "notFound": "Requested Blog is not found..",
+    "gallery": "Image Gallery",
+    "childItems": [
+        {
+            "id": "how-to-find-out-the-best-exhibition-stands-in-uae",
+            "cardImage": "/img/services/Exibition Stands/exibition-stand-20.jpeg",
+            "header": "How to find out the best exhibition stands in UAE",
+            "createdAt": "January, 30 2024"
+        }
+    ]
+}
