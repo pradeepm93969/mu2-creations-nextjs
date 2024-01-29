@@ -18,11 +18,11 @@ export default function Blog1() {
     <Box sx={{maxWidth: "100%", mt: "96px", px: {xs: 1, sm: 2, md: 20}}}>
       <Head>
         <link rel="canonical" href={href}></link>
-        <SEO
+      </Head>
+      <SEO
             title={"How to find out the best exibition stands in UAE"}
             description={"When it comes to making a lasting impression at trade shows and exhibitions in the United Arab Emirates (UAE), having a remarkable exhibition stand is paramount. Your stand is a reflection of your brand, and a well-designed one can set you apart from the competition."}
         />
-      </Head>
       <Box sx={{display: "flex-column", p: 1}}>
         <Typography variant="h2" sx={{ textAlign: "center", fontWeight: "bold", py: 2 }}>
             How to find out the best exibition stands in UAE
