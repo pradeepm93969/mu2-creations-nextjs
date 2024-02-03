@@ -1,8 +1,10 @@
 import servicesData from "../public/locales/en/service.json";
+import blogsData from "../public/locales/en/blog.json";
 
 async function generateSitemap() {
-  const staticPages = ["", "/about-us", "/contact-us", "/services"];
+  const staticPages = ["", "/about-us", "/contact-us", "/services", "/blogs"];
   const services = servicesData.childItems;
+  const blogs = blogsData.childItems;
 
   const fields = [
     ...staticPages.map((page) => ({
@@ -11,6 +13,10 @@ async function generateSitemap() {
     })),
     ...services.map((item) => ({
       loc: process.env.HOST_URL + '/services/' + item.id,
+      lastmod: new Date().toISOString().split('T')[0],
+    })),
+    ...blogs.map((item) => ({
+      loc: process.env.HOST_URL + '/blogs/' + item.id,
       lastmod: new Date().toISOString().split('T')[0],
     })),
   ];
