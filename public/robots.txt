@@ -1,6 +1,16 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /var/
+Disallow: /offset-and-gift-item-printing
+Disallow: /large-format-printing
+Disallow: /vehicle-branding
+Disallow: /flags-and-poles
+Disallow: /signages
+Disallow: /exhibition-stands
+Disallow: /inflatable-structures
+Disallow: /metal-fabrication
+Disallow: /styro-works
 
 # Host
 Host: https://www.mu2creations.com
