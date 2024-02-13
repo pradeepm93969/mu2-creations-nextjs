@@ -11,33 +11,48 @@
             "mainImage": "/img/services/Offset and Gift Item/offset-and-gift-item-1.jpeg",
             "header": "Offset & Gift Item Printing", 
             "subHeader": "Personalized Creations for Memorable Moments",
-            "cardContent": "Personalized mugs, engraved plaques, custom gift sets, and unique keepsakes",
-            "pageContent1": "At MU2 Creations, our offset printing services combine traditional craftsmanship with cutting-edge digital technology to deliver exceptional print solutions. With our expertise, attention to detail, and commitment to quality, we ensure that every print project exceeds expectations.",
+            "cardContent": "Personalized mugs, engraved plaques, custom gift sets, and unique keepsakes, gift item printing services that redefine the art of gifting. Our commitment to excellence is reflected in every print, making us your go-to partner for turning ordinary moments into extraordinary memories. Explore our world of creativity and discover the perfect gift that speaks volumes without uttering a single word.",
             "pageContent2": "Whether you're looking for personalized mugs, custom t-shirts, engraved plaques, or printed photo frames, our gift items printing services offer a wide range of options to suit every occasion and recipient. From birthdays and weddings to corporate events and promotional giveaways, we help you make a statement and leave a lasting impression with our high-quality printing services.",
             "accordianContent": [
                 {
-                    "header": "Range of Applications",
-                    "content": "Our offset printing services cover a wide range of applications, including business cards, brochures, flyers, catalogs, posters, and more. Whether it's a small print run or a large-scale project, we have the capabilities to handle it all."
+                    "header": "Personalized Gifts for Every Occasion",
+                    "content": "We understand that each moment is unique and deserves to be celebrated in a  special way. That's why we offer a wide array of personalized gifts designed to capture the essence of every occasion. From the best anniversary gift ideas for couples to unique birthday and marriage gift ideas, our collection is curated to add a personal touch to your expressions of love and gratitude."
                 },
                 {
-                    "header": "Printing Capabilities",
-                    "content": "We are equipped to print on various paper types and materials, accommodating diverse project requirements."
+                    "header": "Best Anniversary Gift Ideas",
+                    "content": "Celebrate the journey of love with our exquisite range of anniversary gifts. Whether you're searching for the perfect token for a couple or a surprise for your significant other, our collection boasts the best anniversary gift ideas that resonate with sentiment and style."
                 },
                 {
-                    "header": "Wide Range of Gift Items",
-                    "content": ""
+                    "header": "Best Birthday Gift Ideas",
+                    "content": "Make birthdays truly memorable with our selection of the best birthday gift ideas. From quirky and fun to sophisticated and elegant, our personalized gifts are sure to bring a smile to the faces of your loved ones on their special day."
                 },
                 {
-                    "header": "Personalization Options",
-                    "content": ""
+                    "header": "Best Corporate Gift Ideas",
+                    "content": "Forge lasting connections with clients, partners, and employees through our best corporate gift ideas. Our expertly crafted items are not just gifts, they are a reflection of your appreciation and commitment to building meaningful relationships in the corporate world."
                 },
                 {
-                    "header": "High-Quality Printing",
-                    "content": ""
+                    "header": "Bulk Gift Items for Every Occasion",
+                    "content": "Planning a large event? Our bulk gift items are designed to make your life easier while ensuring that each item is a testament to quality and thoughtfulness. From customized gift items to unique gift box ideas, we have you covered."
                 },
                 {
-                    "header": "Gift Packaging",
-                    "content": ""
+                    "header": "Customized Gift Items for a Personal Touch",
+                    "content": "Nothing speaks louder than a gift that is tailor-made for the recipient. Our customized gift items allow you to add a personal touch, turning ordinary items into cherished keepsakes that will be treasured for years to come."
+                },
+                {
+                    "header": "Design Your Own Gift Items",
+                    "content": "Empower your creativity with our 'Design Your Own' feature, allowing you to create personalized gift items that perfectly match your vision. From selecting materials to adding the final touches, the design process is in your hands."
+                },
+                {
+                    "header": "Corporate Gift Items for Professional Elegance",
+                    "content": "Enhance your corporate image with our range of corporate gift items. Thoughtfully designed and expertly crafted, these items are a reflection of your brand's commitment to quality and excellence."
+                },
+                {
+                    "header": "Unveil the Magic of Wedding Gift Ideas",
+                    "content": "Embrace the joy of giving with our enchanting wedding gift ideas. Whether you're looking for a gift for the newlyweds or a token of appreciation for the wedding party, our collection has something for every taste."
+                },
+                {
+                    "header": "Personalized Gifts for Couples",
+                    "content": "Express your love and warmth with our personalized gifts for couples. From customized keepsakes to thoughtful tokens, our collection is a treasure trove of anniversary and marriage gift ideas that celebrate the magic of togetherness."
                 }
             ],
             "galleryImages": [
