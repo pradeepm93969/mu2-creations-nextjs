@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
           <ScrollToTop />
         </main>
       </body>
+      {/* Google Tag manager */}
       <GoogleTagManager gtmId="AW-11461836153" />
     </html>
   );
