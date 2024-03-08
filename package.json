@@ -1,36 +1,33 @@
 {
-  "name": "mu2-creations",
-  "version": "5.0.0",
+  "name": "mu2creations",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "latest",
-    "@mui/material": "latest",
-    "@react-google-maps/api": "^2.18.1",
-    "dotenv": "^16.3.1",
-    "mui-tel-input": "^3.2.2",
-    "next": "latest",
-    "next-i18next": "latest",
-    "nodemailer": "^6.9.3",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-slick": "^0.29.0",
+    "@contentful/rich-text-react-renderer": "^15.19.4",
+    "@contentful/rich-text-types": "^16.3.4",
+    "contentful": "^10.6.22",
+    "formik": "^2.4.5",
+    "next": "14.1.0",
+    "nodemailer": "^6.9.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "formik": "^2.4.2",
-    "yup": "^1.2.0"
+    "yup": "^1.3.3"
   },
   "devDependencies": {
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   }
 }
