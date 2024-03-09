@@ -25,7 +25,7 @@ async function fetchDataWithCache(cacheKey, ttlSeconds, fetchDataFunction) {
 
 export async function getServices() {
   const cacheKey = "services";
-  const ttlSeconds = 60 * 60; // Set TTL to one hour
+  const ttlSeconds = 60 * 60; // Set TTL to 1 hours
   return await fetchDataWithCache(cacheKey, ttlSeconds, async () => {
     return await client.getEntries({
       content_type: "service",
@@ -38,7 +38,7 @@ export async function getServices() {
 
 export async function getBlogs() {
   const cacheKey = "blogs";
-  const ttlSeconds = 60 * 60; // Set TTL to 30 minutes
+  const ttlSeconds = 60 * 60; // Set TTL to 1 hours
   return await fetchDataWithCache(cacheKey, ttlSeconds, async () => {
     return await client.getEntries({
       content_type: "blog",
@@ -52,7 +52,7 @@ export async function getBlogs() {
 
 export async function getBlogDetail(slug) {
   const cacheKey = `blogDetail_${slug}`;
-  const ttlSeconds = 15 * 60; // Set TTL to 15 minutes
+  const ttlSeconds = 60 * 60; // Set TTL to 1 hours
   return await fetchDataWithCache(cacheKey, ttlSeconds, async () => {
     return await client.getEntries({
       content_type: "blog",
@@ -64,7 +64,7 @@ export async function getBlogDetail(slug) {
 
 export async function getServiceDetail(slug) {
   const cacheKey = `serviceDetail_${slug}`;
-  const ttlSeconds = 15 * 60; // Set TTL to 15 minutes
+  const ttlSeconds = 60 * 60; // Set TTL to 1 hours
   return await fetchDataWithCache(cacheKey, ttlSeconds, async () => {
     return await client.getEntries({
       content_type: "service",
