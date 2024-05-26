@@ -37,11 +37,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center md:items-start gap-3 ml-3 xl:ml-20 pb-6 border-b-2 border-slate-300 lg:border-transparent">
               <div className="text-xl font-medium mb-4">SERVICES</div>
+              <Link href="/services/flags-and-poles">Flags & Poles</Link>
               <Link href="/services/signages">Signages</Link>
               <Link href="/services/exhibition-stands">Exhibition Stands</Link>
               <Link href="/services/vehicle-branding">Vehicle branding</Link>
-              <Link href="/services/metal-fabrication">Metal fabrication</Link>
-              <Link href="/services/styro-works">Styro works</Link>
+              <Link href="/services/offset-and-gift-item-printing">
+                Gift Items
+              </Link>
             </div>
             <div className=" flex flex-col items-center md:items-start gap-3 ml-3 xl:ml-20 pb-6 border-b-2 border-slate-300 md:border-transparent">
               <div className="text-xl font-medium mb-4">USEFUL LINKS</div>

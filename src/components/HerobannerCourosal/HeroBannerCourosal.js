@@ -17,12 +17,12 @@ const HeroBannerCourosal = () => {
   };
 
   const desktopImages = [
-    { url: "/images/hero/desktop-1.png", href: "/services/vehicle-branding" },
     { url: "/images/hero/desktop-2.png", href: "/services/flags-and-poles" },
     {
       url: "/images/hero/desktop-3.png",
       href: "/services/inflatable-structures",
     },
+    { url: "/images/hero/desktop-1.png", href: "/services/vehicle-branding" },
   ];
 
   const mobileImages = [
