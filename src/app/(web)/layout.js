@@ -4,8 +4,9 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Toast/Toast";
 import ScrollToTop from "@/components/Common/ScrollToTop";
-import WhatsappSticky from "@/components/Common/WhatsappSticky";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Whatsapp from "@/components/Common/Whatsapp";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -41,9 +42,10 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
-          <WhatsappSticky />
+          <Whatsapp isSticky={true} />
           <ScrollToTop />
         </main>
+        <SpeedInsights />
       </body>
       {/* Google Tag manager */}
       <GoogleTagManager gtmId="AW-11461836153" />

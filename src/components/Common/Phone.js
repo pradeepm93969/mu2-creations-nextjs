@@ -3,8 +3,28 @@ import { MdPhone } from "react-icons/md";
 
 const Phone = () => {
   const phoneNumber = "971551182021";
+
+  // Define gtag_report_conversion function for phone
+  const gtag_report_conversion = (url) => {
+    const callback = () => {
+      if (typeof url !== "undefined") {
+        window.open(url, "_self");
+      }
+    };
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-11461836153/dJtbCMnRpNkZEPn6ttkq",
+        value: 1.0,
+        currency: "AED",
+        event_callback: callback,
+      });
+    }
+    return false;
+  };
+
   const handleLinkClick = (phoneNumber) => {
-    window.open("tel:" + phoneNumber, "_self");
+    const telUrl = `tel:${phoneNumber}`;
+    gtag_report_conversion(telUrl);
   };
   return (
     <div
