@@ -10,10 +10,8 @@ const Whatsapp = ({ isSticky = false }) => {
     sendGTMEvent({
       event: "conversion",
       send_to: "AW-11461836153/Yip-CM3lm9kZEPn6ttkq",
-      event_callback: () => {
-        window.open(whatsappUrl, "_self");
-      },
     });
+    window.open(whatsappUrl, "_self");
   };
 
   if (isSticky) {

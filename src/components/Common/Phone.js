@@ -12,10 +12,8 @@ const Phone = () => {
       send_to: "AW-11461836153/dJtbCMnRpNkZEPn6ttkq",
       value: 1.0,
       currency: "AED",
-      event_callback: () => {
-        window.open(telUrl, "_self");
-      },
     });
+    window.open(telUrl, "_self");
   };
 
   return (
