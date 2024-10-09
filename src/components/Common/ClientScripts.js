@@ -12,7 +12,6 @@ export default function ClientScripts() {
       window.dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "TAG_ID");
   }, []);
 
   return (
@@ -20,7 +19,7 @@ export default function ClientScripts() {
       <script
         async
         src="https://embed.tawk.to/6668c4f7981b6c56477c1662/1i04k2q4o"
-        crossOrigin="anonymous"
+        crossOrigin="*"
       ></script>
       <GoogleTagManager gtmId="AW-11461836153" />
     </>
