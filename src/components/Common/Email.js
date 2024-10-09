@@ -7,6 +7,7 @@ const Email = () => {
 
   const handleLinkClick = () => {
     const mailtoUrl = `mailto:${emailAddress}`;
+    console.log("Event sent successfully, opening mailto link...");
     sendGTMEvent({
       event: "conversion",
       send_to: "AW-11461836153/6CgUCMvun9kZEPn6ttkq",
