@@ -11,6 +11,7 @@ const Email = () => {
       event: "conversion",
       send_to: "AW-11461836153/6CgUCMvun9kZEPn6ttkq",
       event_callback: () => {
+        console.log("Event sent successfully, opening mailto link...");
         window.open(mailtoUrl, "_self");
       },
     });
