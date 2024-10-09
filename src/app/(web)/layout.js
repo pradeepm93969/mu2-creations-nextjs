@@ -4,10 +4,8 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Toast/Toast";
 import ScrollToTop from "@/components/Common/ScrollToTop";
-import { GoogleTagManager } from "@next/third-parties/google";
 import Whatsapp from "@/components/Common/Whatsapp";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import ClientScripts from "@/components/Common/ClientScripts";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <ClientScripts />
+        <script
+          src="https://embed.tawk.to/6668c4f7981b6c56477c1662/1i04k2q4o"
+          async
+          crossOrigin="*"
+        ></script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"

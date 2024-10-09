@@ -18,6 +18,9 @@ const Phone = () => {
         currency: "AED",
         event_callback: callback,
       });
+    } else {
+      console.warn("gtag is not defined. Conversion tracking may not work.");
+      callback(); // Call the URL directly if gtag isn't available
     }
     return false;
   };

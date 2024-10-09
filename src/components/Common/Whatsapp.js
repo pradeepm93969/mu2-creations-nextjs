@@ -16,6 +16,9 @@ const Whatsapp = ({ isSticky = false }) => {
         send_to: "AW-11461836153/Yip-CM3lm9kZEPn6ttkq",
         event_callback: callback,
       });
+    } else {
+      console.warn("gtag is not defined. Conversion tracking may not work.");
+      callback(); // Call the URL directly if gtag isn't available
     }
     return false;
   };
