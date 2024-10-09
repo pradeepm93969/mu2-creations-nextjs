@@ -6,6 +6,7 @@ import Toast from "@/components/Toast/Toast";
 import ScrollToTop from "@/components/Common/ScrollToTop";
 import Whatsapp from "@/components/Common/Whatsapp";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
