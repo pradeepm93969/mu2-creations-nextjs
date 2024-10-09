@@ -25,11 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          src="https://embed.tawk.to/6668c4f7981b6c56477c1662/1i04k2q4o"
-          async
-          crossOrigin="*"
-        ></script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -37,6 +32,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={poppins.className} suppressHydrationWarning={true}>
+        <ClientScripts />
         <Toast className="py-10" />
         <main className="font-normal">
           <Header />
