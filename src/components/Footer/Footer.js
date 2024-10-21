@@ -51,6 +51,7 @@ const Footer = () => {
               <Link href="/about-us">About Us</Link>
               <Link href="/services">Services</Link>
               <Link href="/contact-us">Contact Us</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/sitemap.xml">Site Map</Link>
             </div>
             <div className=" flex flex-col items-center md:items-start gap-3 ">
