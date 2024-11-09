@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import Link from 'next/link'
+import { FaSquareFacebook } from 'react-icons/fa6'
+import { FaTwitter } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa6'
+import { FaLinkedin } from 'react-icons/fa'
 
 const Social = () => {
   return (
@@ -13,14 +13,14 @@ const Social = () => {
       <Link href="https://twitter.com/mu2creations">
         <FaTwitter />
       </Link>
-      <Link href="https://instagram.com/mu2creations">
+      <Link href="https://www.instagram.com/mu2creations.ae/">
         <FaInstagram />
       </Link>
-      <Link href="https://linkdin.com/mu2creations">
+      <Link href="https://www.linkedin.com/in/mu2creations/">
         <FaLinkedin />
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social
