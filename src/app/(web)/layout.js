@@ -1,25 +1,25 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import Toast from "@/components/Toast/Toast";
-import ScrollToTop from "@/components/Common/ScrollToTop";
-import Whatsapp from "@/components/Common/Whatsapp";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { Poppins } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+import Toast from '@/components/Toast/Toast'
+import ScrollToTop from '@/components/Common/ScrollToTop'
+import Whatsapp from '@/components/Common/Whatsapp'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  style: ["italic", "normal"],
-  variable: "--font-poppins",
-});
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '900'],
+  style: ['italic', 'normal'],
+  variable: '--font-poppins',
+})
 
 export const metadata = {
-  title: "MU2 creations | Digital printing and production",
+  title: 'MU2 creations | Digital printing and production',
   description:
-    "At MU2 Creations, we offer expert printing, branding, fabrication, and design services to transform your ideas into tangible impressions that leave a lasting impact. Discover our large format printing, vehicle branding, offset printing, personalized gift items, digital offset printing, digital fabric printing, signages, exhibition stands, lenticular printing, metal fabrication, inflatable structures, and Styrofoam works.",
-};
+    'At MU2 Creations, we offer expert printing, branding, fabrication, and design services to transform your ideas into tangible impressions that leave a lasting impact. Discover our large format printing, vehicle branding, offset printing, personalized gift items, digital offset printing, digital fabric printing, signages, exhibition stands, lenticular printing, metal fabrication, inflatable structures, and Styrofoam works.',
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
       </body>
       {/* Google Tag manager */}
-      <GoogleTagManager gtmId="AW-11461836153" />
+      <GoogleTagManager gtmId="G-2PGZZS0HT7" />
     </html>
-  );
+  )
 }

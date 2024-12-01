@@ -1,18 +1,18 @@
-"use client";
-import { sendGTMEvent } from "@next/third-parties/google";
-import { MdEmail } from "react-icons/md";
+'use client'
+import { sendGTMEvent } from '@next/third-parties/google'
+import { MdEmail } from 'react-icons/md'
 
 const Email = () => {
-  const emailAddress = "info@mu2creations.com";
+  const emailAddress = 'info@mu2creations.com'
 
   const handleLinkClick = () => {
-    const mailtoUrl = `mailto:${emailAddress}`;
+    const mailtoUrl = `mailto:${emailAddress}`
     sendGTMEvent({
-      event: "conversion",
-      send_to: "AW-11461836153/6CgUCMvun9kZEPn6ttkq",
-    });
-    window.open(mailtoUrl, "_self");
-  };
+      event: 'conversion',
+      send_to: 'G-2PGZZS0HT7/6CgUCMvun9kZEPn6ttkq',
+    })
+    window.open(mailtoUrl, '_self')
+  }
 
   return (
     <div
@@ -22,7 +22,7 @@ const Email = () => {
       <MdEmail />
       {emailAddress}
     </div>
-  );
-};
+  )
+}
 
-export default Email;
+export default Email

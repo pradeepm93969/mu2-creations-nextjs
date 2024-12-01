@@ -1,18 +1,18 @@
-"use client";
-import { sendGTMEvent } from "@next/third-parties/google";
-import { MdWhatsapp } from "react-icons/md";
+'use client'
+import { sendGTMEvent } from '@next/third-parties/google'
+import { MdWhatsapp } from 'react-icons/md'
 
 const Whatsapp = ({ isSticky = false }) => {
-  const phoneNumber = "971551182021";
+  const phoneNumber = '971551182021'
 
   const handleLinkClick = () => {
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=`
     sendGTMEvent({
-      event: "conversion",
-      send_to: "AW-11461836153/Yip-CM3lm9kZEPn6ttkq",
-    });
-    window.open(whatsappUrl, "_self");
-  };
+      event: 'conversion',
+      send_to: 'G-2PGZZS0HT7/Yip-CM3lm9kZEPn6ttkq',
+    })
+    window.open(whatsappUrl, '_self')
+  }
 
   if (isSticky) {
     return (
@@ -22,7 +22,7 @@ const Whatsapp = ({ isSticky = false }) => {
       >
         <MdWhatsapp className="text-white text-3xl" />
       </div>
-    );
+    )
   }
 
   return (
@@ -33,7 +33,7 @@ const Whatsapp = ({ isSticky = false }) => {
       <MdWhatsapp />
       {phoneNumber}
     </div>
-  );
-};
+  )
+}
 
-export default Whatsapp;
+export default Whatsapp
