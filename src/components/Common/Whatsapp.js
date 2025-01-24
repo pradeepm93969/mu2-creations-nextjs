@@ -1,6 +1,7 @@
 'use client'
 import { sendGTMEvent } from '@next/third-parties/google'
 import { MdWhatsapp } from 'react-icons/md'
+import { GTM_ID } from '@/lib/contentful/settings'
 
 const Whatsapp = ({ isSticky = false }) => {
   const phoneNumber = '971551182021'
@@ -9,7 +10,7 @@ const Whatsapp = ({ isSticky = false }) => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=`
     sendGTMEvent({
       event: 'conversion',
-      send_to: 'G-2PGZZS0HT7/Yip-CM3lm9kZEPn6ttkq',
+      send_to: `${GTM_ID}/Yip-CM3lm9kZEPn6ttkq`,
     })
     window.open(whatsappUrl, '_self')
   }

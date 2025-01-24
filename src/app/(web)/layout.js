@@ -7,6 +7,7 @@ import ScrollToTop from '@/components/Common/ScrollToTop'
 import Whatsapp from '@/components/Common/Whatsapp'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleTagManager } from '@next/third-parties/google'
+import { GTM_ID } from '@/lib/contentful/settings'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -48,7 +49,7 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
       </body>
       {/* Google Tag manager */}
-      <GoogleTagManager gtmId="G-2PGZZS0HT7" />
+      <GoogleTagManager gtmId={GTM_ID} />
     </html>
   )
 }

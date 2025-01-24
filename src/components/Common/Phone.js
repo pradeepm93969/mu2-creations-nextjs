@@ -1,6 +1,7 @@
 'use client'
 import { sendGTMEvent } from '@next/third-parties/google'
 import { MdPhone } from 'react-icons/md'
+import { GTM_ID } from '@/lib/contentful/settings'
 
 const Phone = () => {
   const phoneNumber = '971551182021'
@@ -9,7 +10,7 @@ const Phone = () => {
     const telUrl = `tel:${phoneNumber}`
     sendGTMEvent({
       event: 'conversion',
-      send_to: 'G-2PGZZS0HT7/dJtbCMnRpNkZEPn6ttkq',
+      send_to: `${GTM_ID}/dJtbCMnRpNkZEPn6ttkq`,
       value: 1.0,
       currency: 'AED',
     })
