@@ -1,15 +1,18 @@
-"use client";
+'use client'
 
-import Address from "@/components/Common/Address";
-import Email from "@/components/Common/Email";
-import Phone from "@/components/Common/Phone";
-import Social from "@/components/Common/Social";
-import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import toast from "react-hot-toast";
+import Address from '@/components/Common/Address'
+import Email from '@/components/Common/Email'
+import Phone from '@/components/Common/Phone'
+import Social from '@/components/Common/Social'
+import React, { useState } from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import * as Yup from 'yup'
+import toast from 'react-hot-toast'
+import { useRouter } from 'next/navigation'
 
 const ContactUs = () => {
+  const router = useRouter()
+
   const validationSchema = Yup.object().shape({
     firstName: Yup.string().required(),
     lastName: Yup.string().required(),
@@ -17,7 +20,7 @@ const ContactUs = () => {
     email: Yup.string().email().required(),
     subject: Yup.string().required(),
     message: Yup.string().required(),
-  });
+  })
 
   return (
     <section className="bg-slate-200">
@@ -26,7 +29,7 @@ const ContactUs = () => {
         <div className="font-sub-title  text-primary-dark">
           Contact our team for any inquiries or assistance
         </div>
-        <div className="my-5 flex flex-col md:flex-row justify-between gap-3 bg-white text-slate-700 rounded-md overflow-hidden shadow-md shadow-slate-600 p-5">
+        <div className="my-5 flex flex-col md:flex-row justify-between gap-3 bg-white text-slate-700 rounded-md overflow-hidden shadow-md shadow-slate-600 p-5 w-full sm:min-w-fit">
           <div className="flex flex-col items-center gap-6 px-10 p-4 sm:border-b-2 border-stone-300 md:border-r-2 md:border-b-0">
             <div className="font-sub-title hidden md:flex font-medium">
               Contact Us
@@ -42,41 +45,40 @@ const ContactUs = () => {
           <div className="w-full flex-1 text-center px-10">
             <Formik
               initialValues={{
-                firstName: "",
-                lastName: "",
-                mobile: "",
-                email: "",
-                subject: "",
-                message: "",
+                firstName: '',
+                lastName: '',
+                mobile: '',
+                email: '',
+                subject: '',
+                message: '',
               }}
               validationSchema={validationSchema}
               onSubmit={async (values, { setSubmitting, resetForm }) => {
                 // Start the submission process
-                setSubmitting(true);
+                setSubmitting(true)
                 try {
-                  const response = await fetch("/api/sendEmail", {
-                    method: "POST",
+                  const response = await fetch('/api/sendEmail', {
+                    method: 'POST',
                     body: JSON.stringify(values),
                     headers: {
-                      "Content-Type": "application/json",
-                      Accept: "application/json",
+                      'Content-Type': 'application/json',
+                      Accept: 'application/json',
                     },
-                  });
+                  })
 
                   if (!response.ok) {
-                    throw new Error("Failed to send message");
+                    throw new Error('Failed to send message')
                   }
 
                   // Reset the form and mark submission as complete
-                  resetForm();
-                  setSubmitting(false);
+                  resetForm()
+                  setSubmitting(false)
 
-                  // Show success alert
-                  toast.success("Form submitted successfully");
+                  router.push('/thank-you')
                 } catch (error) {
-                  toast.error("Failed to submit form");
-                  console.error("Failed to send email:", error);
-                  setSubmitting(false);
+                  toast.error('Failed to submit form')
+                  console.error('Failed to send email:', error)
+                  setSubmitting(false)
                 }
               }}
             >
@@ -96,8 +98,8 @@ const ContactUs = () => {
                       name="firstName"
                       className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
                         touched.firstName && errors.firstName
-                          ? "border-red-500"
-                          : ""
+                          ? 'border-red-500'
+                          : ''
                       }`}
                       placeholder="First Name"
                     />
@@ -120,8 +122,8 @@ const ContactUs = () => {
                       name="lastName"
                       className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
                         touched.lastName && errors.lastName
-                          ? "border-red-500"
-                          : ""
+                          ? 'border-red-500'
+                          : ''
                       }`}
                       placeholder="Last Name"
                     />
@@ -143,7 +145,7 @@ const ContactUs = () => {
                       id="mobile"
                       name="mobile"
                       className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
-                        touched.mobile && errors.mobile ? "border-red-500" : ""
+                        touched.mobile && errors.mobile ? 'border-red-500' : ''
                       }`}
                       placeholder="971555555555"
                     />
@@ -165,7 +167,7 @@ const ContactUs = () => {
                       id="email"
                       name="email"
                       className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
-                        touched.email && errors.email ? "border-red-500" : ""
+                        touched.email && errors.email ? 'border-red-500' : ''
                       }`}
                       placeholder="email@domain.com"
                     />
@@ -188,8 +190,8 @@ const ContactUs = () => {
                       name="subject"
                       className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
                         touched.subject && errors.subject
-                          ? "border-red-500"
-                          : ""
+                          ? 'border-red-500'
+                          : ''
                       }`}
                       placeholder="Subject"
                     />
@@ -214,8 +216,8 @@ const ContactUs = () => {
                       className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500
                       ${
                         touched.message && errors.message
-                          ? "border-red-500"
-                          : ""
+                          ? 'border-red-500'
+                          : ''
                       }`}
                       placeholder="Leave a comment..."
                     ></Field>
@@ -239,7 +241,7 @@ const ContactUs = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactUs;
+export default ContactUs
