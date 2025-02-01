@@ -12,7 +12,7 @@ const ThankYou = () => {
           back to you as soon as possible.
         </div>
       </div>
-      <div className="btn-primary max-w-48 mb-10 mt-5 mx-auto">
+      <div className="btn-primary max-w-52 mb-10 mt-5 mx-auto">
         <Link href="/">Back to Home</Link>
       </div>
     </section>
