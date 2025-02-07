@@ -6,8 +6,8 @@ import Toast from '@/components/Toast/Toast'
 import ScrollToTop from '@/components/Common/ScrollToTop'
 import Whatsapp from '@/components/Common/Whatsapp'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { GoogleTagManager } from '@next/third-parties/google'
-import { GTM_ID } from '@/lib/contentful/settings'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GA_ID, GTM_ID } from '@/lib/contentful/settings'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -50,6 +50,7 @@ export default function RootLayout({ children }) {
       </body>
       {/* Google Tag manager */}
       <GoogleTagManager gtmId={GTM_ID} />
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   )
 }
