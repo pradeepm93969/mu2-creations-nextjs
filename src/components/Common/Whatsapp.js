@@ -17,30 +17,26 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
 
   if (isSticky) {
     const isIndianNumber = phoneNumber?.startsWith('91')
-    const flagUrl = isIndianNumber
-      ? '/images/flags/india.png' // Place these in your /public/flags folder
-      : '/images/flags/uae.png'
-    const height = isIndianNumber ? 'bottom-2' : 'bottom-20'
+    const height = isIndianNumber ? 'bottom-6' : 'bottom-24'
+    const label = isIndianNumber ? 'India' : 'UAE'
+    const labelShift = isIndianNumber ? '-right-14' : '-right-12'
 
     return (
       <div
         onClick={handleLinkClick}
-        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex justify-center items-center`}
-        style={{
-          backgroundImage: `url(${flagUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backdropFilter: 'brightness(0.7)', // if you want a dimmed look
-        }}
+        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
       >
-        <div
-          className="absolute inset-0 bg-black opacity-50 rounded-full"
-          style={{ zIndex: 1 }}
-        />
-        <MdWhatsapp
-          className="text-white text-4xl"
-          style={{ position: 'relative', zIndex: 2 }}
-        />
+        <MdWhatsapp className="text-white text-2xl" />
+
+        <span
+          className={`absolute ${labelShift} -translate-x-1/2 text-white text-sm px-1 rounded`}
+          style={{
+            textShadow: `1px 1px 2px rgba(0, 0, 0, 0.8),
+                      -1px -1px 2px rgba(0, 0, 0, 0.8)`,
+          }}
+        >
+          {label}
+        </span>
       </div>
     )
   }
