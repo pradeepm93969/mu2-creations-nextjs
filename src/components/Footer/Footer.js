@@ -1,19 +1,23 @@
-import Link from "next/link";
-import React from "react";
-import Phone from "../Common/Phone";
-import Email from "../Common/Email";
-import Social from "../Common/Social";
-import Address from "../Common/Address";
+import Link from 'next/link'
+import React from 'react'
+import Phone from '../Common/Phone'
+import Email from '../Common/Email'
+import Social from '../Common/Social'
+import Address from '../Common/Address'
+import IndianPhone from '../Common/IndianPhone'
+import UAEPhone from '../Common/UAEPhone'
+import UAEWhatsapp from '../Common/UAEWhatsapp'
+import IndianWhatsapp from '../Common/IndianWhatsapp'
 
 const Footer = () => {
   return (
     <footer>
       {/* top footer */}
       <div className="bg-primary-main text-white text-md md:text-lg tracking-wide">
-        <div className="container mx-auto flex justify-between items-center py-2 px-2 md:px-20">
+        <div className="container mx-auto flex justify-between items-center py-2 px-10 md:px-20">
           <div className="hidden md:block font-medium">Help & Support</div>
-          <Phone />
-          <Email />
+          <UAEPhone />
+          <IndianPhone />
         </div>
       </div>
 
@@ -57,7 +61,10 @@ const Footer = () => {
             <div className=" flex flex-col items-center md:items-start gap-3 ">
               <div className="text-2xl font-medium pb-4">Contact Us</div>
               <Email />
-              <Phone />
+              <UAEPhone />
+              <IndianPhone />
+              <UAEWhatsapp />
+              <IndianWhatsapp />
               <Address />
             </div>
           </div>
@@ -67,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

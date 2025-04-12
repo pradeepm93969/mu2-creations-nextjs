@@ -1,64 +1,66 @@
-"use client";
+'use client'
 
-import React, { useEffect, useState } from "react";
-import Email from "../Common/Email";
-import Phone from "../Common/Phone";
-import Whatsapp from "../Common/Whatsapp";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useEffect, useState } from 'react'
+import Email from '../Common/Email'
+import Link from 'next/link'
+import Image from 'next/image'
 import {
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
   MdMenuOpen,
-} from "react-icons/md";
+} from 'react-icons/md'
+import IndianPhone from '../Common/IndianPhone'
+import UAEPhone from '../Common/UAEPhone'
+import UAEWhatsapp from '../Common/UAEWhatsapp'
+import IndianWhatsapp from '../Common/IndianWhatsapp'
 
 const HeaderMenu = ({ services }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null);
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMobileServiceMenuOpen, setMobileServiceMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [activeMenu, setActiveMenu] = useState(null)
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isMobileServiceMenuOpen, setMobileServiceMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;
-      setIsScrolled(offset > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
+      const offset = window.scrollY
+      setIsScrolled(offset > 0)
+    }
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const handleDropdownToggle = (index) => {
-    setActiveMenu(activeMenu === index ? null : index);
-  };
+    setActiveMenu(activeMenu === index ? null : index)
+  }
 
   const openMobileMenu = () => {
-    setMobileMenuOpen(true);
-  };
+    setMobileMenuOpen(true)
+  }
 
   const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
-    setMobileServiceMenuOpen(false);
-  };
+    setMobileMenuOpen(false)
+    setMobileServiceMenuOpen(false)
+  }
 
   const toggleMobileServices = () => {
-    setMobileServiceMenuOpen(!isMobileServiceMenuOpen);
-  };
+    setMobileServiceMenuOpen(!isMobileServiceMenuOpen)
+  }
 
   // Define an array of navigation items
   const navItems = [
-    { text: "Home", url: "/" },
-    { text: "Services", url: "/services" },
-    { text: "Blogs", url: "/blogs" },
-    { text: "Contact Us", url: "/contact-us" },
-  ];
+    { text: 'Home', url: '/' },
+    { text: 'Services', url: '/services' },
+    { text: 'Blogs', url: '/blogs' },
+    { text: 'Contact Us', url: '/contact-us' },
+  ]
 
   const renderMobileMenu = (navItems, services) => {
     return (
       <div
         className={`lg:hidden fixed top-0 left-0 w-full h-full bg-white z-50 transform ${
-          isMobileMenuOpen ? "-translate-x-0" : "translate-x-full"
+          isMobileMenuOpen ? '-translate-x-0' : 'translate-x-full'
         } transition-transform ease-in-out duration-300 overflow-hidden`}
       >
         <div className="flex justify-between items-center border-b-2 px-6 py-4">
@@ -91,7 +93,7 @@ const HeaderMenu = ({ services }) => {
                   >
                     {item.text}
                   </Link>
-                  {item.text == "Services" && (
+                  {item.text == 'Services' && (
                     <div
                       className="cursor-pointer"
                       onClick={toggleMobileServices}
@@ -104,7 +106,7 @@ const HeaderMenu = ({ services }) => {
                     </div>
                   )}
                 </div>
-                {item.text == "Services" &&
+                {item.text == 'Services' &&
                   isMobileServiceMenuOpen &&
                   services &&
                   services.length > 0 && (
@@ -128,18 +130,20 @@ const HeaderMenu = ({ services }) => {
 
           <div className="mt-auto border-t-2 w-full flex flex-col gap-6 py-6 text-xl">
             <Email />
-            <Phone />
-            <Whatsapp />
+            <UAEPhone />
+            <IndianPhone />
+            <UAEWhatsapp />
+            <IndianWhatsapp />
           </div>
         </div>
       </div>
-    );
-  };
+    )
+  }
 
   return (
     <header
       className={`flex flex-col z-40 fixed w-full ${
-        isScrolled ? "-top-10 " : "top-0"
+        isScrolled ? '-top-10 ' : 'top-0'
       } transition-all duration-300 ease-in-out`}
     >
       {/* Top Header */}
@@ -149,13 +153,19 @@ const HeaderMenu = ({ services }) => {
             Print with Precision, Create with Passion
           </div>
           <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
-            <Phone />
+            <UAEPhone />
+          </div>
+          <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
+            <IndianPhone />
           </div>
           <div className="hidden xl:flex font-normal text-[12px] lg:text-lg">
             <Email />
           </div>
           <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
-            <Whatsapp />
+            <UAEWhatsapp />
+          </div>
+          <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
+            <IndianWhatsapp />
           </div>
         </div>
       </div>
@@ -165,7 +175,7 @@ const HeaderMenu = ({ services }) => {
         <div className="container mx-auto flex justify-between items-center">
           {/* logo */}
           <div className="flex justify-between items-center w-1/2">
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+            <Link href="/" style={{ textDecoration: 'none', color: 'white' }}>
               <div className="flex justify-center items-center ml-3 gap-3 ">
                 <Image
                   src="/images/Logo-d.png"
@@ -193,7 +203,7 @@ const HeaderMenu = ({ services }) => {
                 onMouseLeave={() => handleDropdownToggle(index)}
               >
                 <Link href={item.url}>{item.text}</Link>
-                {item.text === "Services" && activeMenu === index && (
+                {item.text === 'Services' && activeMenu === index && (
                   <div className="absolute z-50 -right-10 mt-0 w-72 h-auto bg-white border-4 border-gray-200 rounded-md shadow-2xl shadow-black text-primary-dark text-lg flex flex-col px-6 py-2">
                     {/* Render dropdown content for "Services" */}
                     {Array.isArray(services) &&
@@ -202,7 +212,7 @@ const HeaderMenu = ({ services }) => {
                           key={index}
                           href={`/services/${service.fields.slug}`}
                           className={`py-1 hover:text-tertiary-dark ${
-                            index !== services.length - 1 ? " border-b-2" : ""
+                            index !== services.length - 1 ? ' border-b-2' : ''
                           }`}
                         >
                           {service.fields.title}
@@ -221,7 +231,7 @@ const HeaderMenu = ({ services }) => {
 
       {renderMobileMenu(navItems, services)}
     </header>
-  );
-};
+  )
+}
 
-export default HeaderMenu;
+export default HeaderMenu

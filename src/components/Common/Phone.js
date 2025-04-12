@@ -3,17 +3,17 @@ import { sendGTMEvent } from '@next/third-parties/google'
 import { MdPhone } from 'react-icons/md'
 import { GTM_ID } from '@/lib/contentful/settings'
 
-const Phone = () => {
-  const phoneNumber = '971551182021'
-
+const Phone = ({ phoneNumber, gtmPhoneId }) => {
   const handleLinkClick = () => {
     const telUrl = `tel:${phoneNumber}`
-    sendGTMEvent({
-      event: 'conversion',
-      send_to: `${GTM_ID}/dJtbCMnRpNkZEPn6ttkq`,
-      value: 1.0,
-      currency: 'AED',
-    })
+    if (gtmPhoneId) {
+      sendGTMEvent({
+        event: 'conversion',
+        send_to: `${GTM_ID}/${gtmPhoneId}`,
+        value: 1.0,
+        currency: 'AED',
+      })
+    }
     window.open(telUrl, '_self')
   }
 

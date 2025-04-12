@@ -9,6 +9,10 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
+import UAEPhone from '@/components/Common/UAEPhone'
+import IndianPhone from '@/components/Common/IndianPhone'
+import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
+import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
 
 const ContactUs = () => {
   const router = useRouter()
@@ -35,7 +39,10 @@ const ContactUs = () => {
               Contact Us
             </div>
             <Email />
-            <Phone />
+            <UAEPhone />
+            <IndianPhone />
+            <UAEWhatsapp />
+            <IndianWhatsapp />
             <Address />
             <div className="text-primary-main pb-4">
               <Social />
