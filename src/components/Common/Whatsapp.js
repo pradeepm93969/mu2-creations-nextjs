@@ -29,7 +29,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
         <MdWhatsapp className="text-white text-2xl" />
 
         <span
-          className={`absolute ${labelShift} -translate-x-1/2 text-white text-sm px-1 rounded`}
+          className={`absolute -bottom-3 left-1/2 -translate-x-1/2 text-white text-sm px-1 rounded`}
           style={{
             textShadow: `1px 1px 2px rgba(0, 0, 0, 0.8),
                       -1px -1px 2px rgba(0, 0, 0, 0.8)`,
