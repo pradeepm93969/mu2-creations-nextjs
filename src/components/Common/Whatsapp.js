@@ -17,7 +17,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
 
   if (isSticky) {
     const isIndianNumber = phoneNumber?.startsWith('91')
-    const height = isIndianNumber ? 'bottom-6' : 'bottom-24'
+    const height = isIndianNumber ? 'bottom-6' : 'bottom-6'
     const label = isIndianNumber ? 'India' : 'UAE'
     const labelShift = isIndianNumber ? '-right-14' : '-right-12'
 
@@ -28,7 +28,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
       >
         <MdWhatsapp className="text-white text-2xl" />
 
-        <span
+        {/* <span
           className={`absolute -bottom-3 left-1/2 -translate-x-1/2 text-white text-sm px-1 rounded`}
           style={{
             textShadow: `1px 1px 2px rgba(0, 0, 0, 0.8),
@@ -36,7 +36,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
           }}
         >
           {label}
-        </span>
+        </span> */}
       </div>
     )
   }

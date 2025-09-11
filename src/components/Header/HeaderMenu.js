@@ -155,18 +155,18 @@ const HeaderMenu = ({ services }) => {
           <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
             <UAEPhone />
           </div>
-          <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
+          {/* <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
             <IndianPhone />
-          </div>
+          </div> */}
           <div className="hidden xl:flex font-normal text-[12px] lg:text-lg">
             <Email />
           </div>
           <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
             <UAEWhatsapp />
           </div>
-          <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
+          {/* <div className="hidden lg:flex font-normal text-[12px] lg:text-lg">
             <IndianWhatsapp />
-          </div>
+          </div> */}
         </div>
       </div>
 
