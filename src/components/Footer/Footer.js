@@ -1,13 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import Phone from '../Common/Phone'
 import Email from '../Common/Email'
 import Social from '../Common/Social'
 import Address from '../Common/Address'
-import IndianPhone from '../Common/IndianPhone'
 import UAEPhone from '../Common/UAEPhone'
 import UAEWhatsapp from '../Common/UAEWhatsapp'
-import IndianWhatsapp from '../Common/IndianWhatsapp'
 
 const Footer = () => {
   return (
@@ -17,7 +14,7 @@ const Footer = () => {
         <div className="container mx-auto flex justify-between items-center py-2 px-10 md:px-20">
           <div className="hidden md:block font-medium">Help & Support</div>
           <UAEPhone />
-          <IndianPhone />
+          {/* <IndianPhone /> */}
         </div>
       </div>
 
@@ -42,12 +39,10 @@ const Footer = () => {
             <div className="flex flex-col items-center md:items-start gap-3 ml-3 xl:ml-20 pb-6 border-b-2 border-slate-300 lg:border-transparent">
               <div className="text-xl font-medium mb-4">SERVICES</div>
               <Link href="/services/flags-and-poles">Flags & Poles</Link>
+              <Link href="/services/large-format-printing">Large Format Printing</Link>
               <Link href="/services/signages">Signages</Link>
               <Link href="/services/exhibition-stands">Exhibition Stands</Link>
               <Link href="/services/vehicle-branding">Vehicle branding</Link>
-              <Link href="/services/offset-and-gift-item-printing">
-                Gift Items
-              </Link>
             </div>
             <div className=" flex flex-col items-center md:items-start gap-3 ml-3 xl:ml-20 pb-6 border-b-2 border-slate-300 md:border-transparent">
               <div className="text-xl font-medium mb-4">USEFUL LINKS</div>
@@ -62,14 +57,14 @@ const Footer = () => {
               <div className="text-2xl font-medium pb-4">Contact Us</div>
               <Email />
               <UAEPhone />
-              <IndianPhone />
+              {/* <IndianPhone /> */}
               <UAEWhatsapp />
-              <IndianWhatsapp />
+              {/* <IndianWhatsapp /> */}
               <Address />
             </div>
           </div>
           <div className="text-center text-md py-2">
-            © MU2 Creations 2024 - Developed by Pradeep Manjunath
+            © MU2 Creations 2024. All rights reserved.
           </div>
         </div>
       </div>

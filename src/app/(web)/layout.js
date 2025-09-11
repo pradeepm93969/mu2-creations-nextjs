@@ -4,11 +4,9 @@ import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import Toast from '@/components/Toast/Toast'
 import ScrollToTop from '@/components/Common/ScrollToTop'
-import Whatsapp from '@/components/Common/Whatsapp'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { GA_ID, GTM_ID } from '@/lib/contentful/settings'
-import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
 
 const poppins = Poppins({
@@ -45,7 +43,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
-          <IndianWhatsapp isSticky={true} />
+          {/* <IndianWhatsapp isSticky={true} /> */}
           <UAEWhatsapp isSticky={true} />
           <ScrollToTop />
         </main>

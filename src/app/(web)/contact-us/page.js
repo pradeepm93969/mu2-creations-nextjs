@@ -40,9 +40,9 @@ const ContactUs = () => {
             </div>
             <Email />
             <UAEPhone />
-            <IndianPhone />
+            {/* <IndianPhone /> */}
             <UAEWhatsapp />
-            <IndianWhatsapp />
+            {/* <IndianWhatsapp /> */}
             <Address />
             <div className="text-primary-main pb-4">
               <Social />

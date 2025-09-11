@@ -131,9 +131,9 @@ const HeaderMenu = ({ services }) => {
           <div className="mt-auto border-t-2 w-full flex flex-col gap-6 py-6 text-xl">
             <Email />
             <UAEPhone />
-            <IndianPhone />
+            {/* <IndianPhone /> */}
             <UAEWhatsapp />
-            <IndianWhatsapp />
+            {/* <IndianWhatsapp /> */}
           </div>
         </div>
       </div>
