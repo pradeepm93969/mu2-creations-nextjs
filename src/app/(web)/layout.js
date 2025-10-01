@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { GA_ID, GTM_ID } from '@/lib/contentful/settings'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
+import UAEPhone from '@/components/Common/UAEPhone'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           <Footer />
           {/* <IndianWhatsapp isSticky={true} /> */}
           <UAEWhatsapp isSticky={true} />
+          <UAEPhone isSticky={true} />
           <ScrollToTop />
         </main>
         <SpeedInsights />

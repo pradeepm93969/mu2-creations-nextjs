@@ -17,26 +17,24 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
 
   if (isSticky) {
     const isIndianNumber = phoneNumber?.startsWith('91')
-    const height = isIndianNumber ? 'bottom-6' : 'bottom-6'
+    const height = isIndianNumber ? 'bottom-6' : 'bottom-20'
     const label = isIndianNumber ? 'India' : 'UAE'
-    const labelShift = isIndianNumber ? '-right-14' : '-right-12'
+    const labelShift = isIndianNumber ? '-right-14' : '-right-10'
 
     return (
       <div
         onClick={handleLinkClick}
-        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
+        aria-label={`WhatsApp Now ${phoneNumber}`}
+        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-2.5 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
       >
-        <MdWhatsapp className="text-white text-2xl" />
+        <MdWhatsapp className="text-white text-3xl" />
 
-        {/* <span
-          className={`absolute -bottom-3 left-1/2 -translate-x-1/2 text-white text-sm px-1 rounded`}
-          style={{
-            textShadow: `1px 1px 2px rgba(0, 0, 0, 0.8),
-                      -1px -1px 2px rgba(0, 0, 0, 0.8)`,
-          }}
+         {/* Tooltip on hover */}
+        <span
+          className="z-40 absolute left-full top-1/2 -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black text-white text-xs px-2 py-1 rounded shadow-md whitespace-nowrap"
         >
-          {label}
-        </span> */}
+          WhatsApp Now
+        </span>
       </div>
     )
   }
