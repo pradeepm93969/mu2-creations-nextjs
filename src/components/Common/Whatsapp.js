@@ -24,7 +24,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
     return (
       <div
         onClick={handleLinkClick}
-        aria-label={`WhatsApp Now ${phoneNumber}`}
+        aria-label={`WhatsApp Now`}
         className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-2.5 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
       >
         <MdWhatsapp className="text-white text-3xl" />

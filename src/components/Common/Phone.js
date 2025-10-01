@@ -26,7 +26,7 @@ const Phone = ({ phoneNumber, gtmPhoneId, isSticky = false }) => {
     return (
       <div
         onClick={handleLinkClick}
-        aria-label={`Call Now ${phoneNumber}`}
+        aria-label={`Call Now`}
         className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex flex-row bg-red-500 hover:bg-red-600`}
       >
         <MdPhone className="text-white text-2xl" />
