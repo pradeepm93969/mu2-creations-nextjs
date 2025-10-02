@@ -16,7 +16,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
   }
 
   if (isSticky) {
-    const isIndianNumber = phoneNumber?.startsWith('91')
+    const isIndianNumber = phoneNumber?.startsWith('+91')
     const height = isIndianNumber ? 'bottom-6' : 'bottom-20'
     const label = isIndianNumber ? 'India' : 'UAE'
     const labelShift = isIndianNumber ? '-right-14' : '-right-10'
