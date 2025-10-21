@@ -22,8 +22,8 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
     const labelShift = isIndianNumber ? '-right-14' : '-right-10'
 
     return (
-      <div
-        onClick={handleLinkClick}
+      <a
+        href={`https://wa.me/${phoneNumber}?text=`}
         aria-label={`WhatsApp Now`}
         className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-2.5 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
       >
@@ -35,18 +35,18 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
         >
           WhatsApp Now
         </span>
-      </div>
+      </a>
     )
   }
 
   return (
-    <div
+    <a
       className="flex items-center justify-center gap-2 cursor-pointer"
-      onClick={handleLinkClick}
+      href={`https://wa.me/${phoneNumber}?text=`}
     >
       <MdWhatsapp />
       {phoneNumber}
-    </div>
+    </a>
   )
 }
 
