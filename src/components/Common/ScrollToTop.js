@@ -28,7 +28,7 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <div
-          className="fixed bottom-24 right-8 cursor-pointer"
+          className="fixed bottom-8 right-4 cursor-pointer"
           onClick={scrollToTop}
           role="presentation"
         >

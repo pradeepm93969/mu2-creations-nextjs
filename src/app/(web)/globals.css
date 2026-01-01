@@ -23,6 +23,10 @@
   @apply font-medium text-base md:text-lg italic;
 }
 
+.font-sub-heading {
+  @apply font-medium text-base md:text-lg;
+}
+
 .font-typography {
   @apply text-sm md:text-base;
 }

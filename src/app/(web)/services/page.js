@@ -1,12 +1,11 @@
 import Service from "@/components/Service/Service";
-import { getServices } from "@/lib/contentful/api";
+import services from "@/lib/data/services.json";
 import React from "react";
 
 const page = async () => {
-  const serviceResponse = await getServices();
   return (
     <div className="mt-36">
-      <Service services={serviceResponse.items} renderCarousal={false} />
+      <Service services={services} renderCarousal={false} />
     </div>
   );
 };

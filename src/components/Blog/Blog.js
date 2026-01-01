@@ -65,7 +65,7 @@ const Blog = ({ blogs, renderCarousal }) => {
   const renderBlogCard = ({ blog, index }) => {
     return (
       <Link
-        href={"/blogs/" + blog.fields.slug}
+        href={"/blogs/" + blog.slug}
         passHref
         key={index}
         className="px-5"
@@ -73,8 +73,8 @@ const Blog = ({ blogs, renderCarousal }) => {
         <div className="rounded-lg overflow-hidden shadow-md shadow-slate-500 max-w-sm bg-white h-full mx-auto">
           <div className="block h-[250px] relative">
             <Image
-              src={"https:" + blog.fields.coverImage.fields.file.url + "?w=360"}
-              alt={blog.fields.title}
+              src={blog.image + "?w=360"}
+              alt={blog.title}
               fill
               sizes="100%"
               className="object-cover"
@@ -82,9 +82,9 @@ const Blog = ({ blogs, renderCarousal }) => {
           </div>
           <div className="flex justify-center flex-col items-center p-5 text-slate-800">
             <div className="text-lg font-semibold pb-4">
-              {blog.fields.title}
+              {blog.title}
             </div>
-            <div className="text-sm pb-5 ">{formatDate(blog.fields.date)}</div>
+            <div className="text-sm pb-5 ">{formatDate(blog.date)}</div>
             <button className="btn-primary">Read More...</button>
           </div>
         </div>

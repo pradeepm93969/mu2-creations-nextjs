@@ -1,9 +1,8 @@
-import { getServices } from "@/lib/contentful/api";
+import services from "@/lib/data/services.json";
 import HeaderMenu from "./HeaderMenu";
 
 const Header = async () => {
-  const serviceResponse = await getServices();
-  return <HeaderMenu services={serviceResponse.items} />;
+  return <HeaderMenu services={services} />;
 };
 
 export default Header;

@@ -115,10 +115,10 @@ const HeaderMenu = ({ services }) => {
                         {services.map((service, index) => (
                           <Link
                             key={index}
-                            href={`/services/${service.fields.slug}`}
+                            href={`/services/${service.slug}`}
                             onClick={closeMobileMenu}
                           >
-                            {service.fields.title}
+                            {service.title}
                           </Link>
                         ))}
                       </div>
@@ -210,12 +210,12 @@ const HeaderMenu = ({ services }) => {
                       services.map((service, index) => (
                         <Link
                           key={index}
-                          href={`/services/${service.fields.slug}`}
+                          href={`/services/${service.slug}`}
                           className={`py-1 hover:text-tertiary-dark ${
                             index !== services.length - 1 ? ' border-b-2' : ''
                           }`}
                         >
-                          {service.fields.title}
+                          {service.title}
                         </Link>
                       ))}
                   </div>

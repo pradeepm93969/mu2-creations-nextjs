@@ -64,7 +64,7 @@ const Service = ({ services, renderCarousal }) => {
   const renderServiceCard = ({ service, index }) => {
     return (
       <Link
-        href={"/services/" + service.fields.slug}
+        href={"/services/" + service.slug}
         passHref
         key={index}
         className="px-5"
@@ -73,9 +73,9 @@ const Service = ({ services, renderCarousal }) => {
           <div className="block h-[250px] relative">
             <Image
               src={
-                "https:" + service.fields.coverImage.fields.file.url + "?w=360"
+                service.image + "?w=360"
               }
-              alt={service.fields.title}
+              alt={service.title}
               fill
               sizes="100%"
               className="object-cover"
@@ -83,12 +83,12 @@ const Service = ({ services, renderCarousal }) => {
           </div>
           <div className="flex justify-center flex-col items-center p-5 text-slate-800">
             <div className="text-lg font-semibold pb-2">
-              {service.fields.title}
+              {service.title}
             </div>
             <div className="text-base pb-5 h-[6rem] md:h-[7rem]">
               {service.summary && service.summary.length > 100
-                ? `${service.fields.summary.substring(0, 100)}...`
-                : service.fields.summary}
+                ? `${service.summary.substring(0, 100)}...`
+                : service.summary}
             </div>
             <button className="btn-primary">Learn More...</button>
           </div>

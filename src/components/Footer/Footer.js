@@ -11,9 +11,10 @@ const Footer = () => {
     <footer>
       {/* top footer */}
       <div className="bg-primary-main text-white text-md md:text-lg tracking-wide">
-        <div className="container mx-auto flex justify-between items-center py-2 px-10 md:px-20">
+        <div className="mx-auto flex justify-between items-center py-2 px-2 md:px-20">
           <div className="hidden md:block font-medium">Help & Support</div>
           <UAEPhone />
+          <Email />
           {/* <IndianPhone /> */}
         </div>
       </div>

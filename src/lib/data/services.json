@@ -1,0 +1,45 @@
+[
+    {
+        "slug": "flags-and-poles",
+        "title": "Flags and Poles",
+        "summary": "Custom advertising flags and poles in the UAE. We offer various styles, including feather, teardrop, and tabletop flags, with fast delivery.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/7Dsd35JRlX2ezEO46qhpdr/fd514665962a1b331a4df5234e5b94f5/WhatsApp_Image_2025-09-11_at_11.09.32_PM.jpeg",
+        "order": 1
+    },{
+        "slug": "large-format-printing",
+        "title": "Large Format Printing",
+        "summary": "Printing on a larger scale, typically used for posters, banners, and other promotional materials.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/51zdZCf7BQYNvUOxef965/0c25c55165a57c004dd10b7fa21f4742/large-format-printing-1.jpeg",
+        "order": 2
+    },{
+        "slug": "signages",
+        "title": "signages",
+        "summary": "Creating and producing various types of signs for businesses, including indoor and outdoor.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/519PnLFl7hGkJm1rStlZdr/a86584bd541a3eee534f2e980f6795e1/signages-1.jpeg",
+        "order": 3
+    },{
+        "slug": "exhibition-stands",
+        "title": "Exhibition Stands",
+        "summary": "Designing and constructing wooden exhibition stands for trade shows, events, and exhibitions",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/4Ru7k2zDmgZaYfpJ0D6YwN/b008d1dcabaf60b6b1d21b5fea47d02d/exibition-stand-20.jpeg",
+        "order": 4
+    },{
+        "slug": "vehicle-branding",
+        "title": "Vehicle Branding",
+        "summary": "Applying custom graphics, logos, and designs onto vehicles for advertising purposes.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/20TJKW9uPordf2I9aoshoJ/d0eef3346352ac666a7adaa707705225/vehicle-branding-1.png",
+        "order": 5
+    },{
+        "slug": "metal-fabrication",
+        "title": "Metal Fabrication",
+        "summary": "Crafting and shaping metal materials to create custom structures, signage, or decorative pieces.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/4CAftmfaSc1yx0CyVeYGhD/3049c25b9c1b89532cb665b81d524ccb/metal-fabrication-1.jpeg",
+        "order": 6
+    },{
+        "slug": "inflatable-structures",
+        "title": "Inflatable Structures",
+        "summary": "Custom advertising flags and poles in the UAE. We offer various styles, including feather, teardrop, and tabletop flags, with fast delivery.",
+        "image": "https://images.ctfassets.net/w580lcndjvnz/soMSmb6jBAWgzxITPLbuO/e7d23699ceb4f96981c6e45c1082958b/inflatable-structures-1.jpeg",
+        "order": 7
+    }
+]

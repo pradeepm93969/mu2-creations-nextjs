@@ -4,20 +4,18 @@ import ChooseUs from "@/components/ChooseUs/ChooseUs";
 import HeroBannerCourosal from "@/components/HerobannerCourosal/HeroBannerCourosal";
 import Mission from "@/components/Mission/Mission";
 import Service from "@/components/Service/Service";
-import { getBlogs, getServices } from "@/lib/contentful/api";
+import services from "@/lib/data/services.json";
+import blogs from "@/lib/data/blogs.json";
 
 const Home = async () => {
-  const serviceResponse = await getServices();
-  const blogResponse = await getBlogs(0, 100);
-
   return (
     <div className="mt-32">
       <HeroBannerCourosal />
-      <Service services={serviceResponse.items} renderCarousal={true} />
+      <Service services={services} renderCarousal={true} />
       <ChooseUs />
       <AboutUs />
       <Mission />
-      <Blog blogs={blogResponse.items} renderCarousal={true} />
+      <Blog blogs={blogs} renderCarousal={true} />
     </div>
   );
 };

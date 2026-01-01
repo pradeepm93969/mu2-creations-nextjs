@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { MdCancel } from "react-icons/md";
 
-const ImageGallery = ({ photos }) => {
+const ImageGallery = ({ photos, title }) => {
   const [currenPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
@@ -40,8 +40,8 @@ const ImageGallery = ({ photos }) => {
         <div className="h-[405px] lg:h-[540px] rounded-2xl overflow-hidden w-full ">
           <div className="hidden md:flex justify-center items-center w-full h-full relative bg-slate-300">
             <Image
-              src={"https:" + photos[0].fields.file.url + "?w=720"}
-              alt={`${photos[0].fields.title} ${currenPhotoIndex + 1}`}
+              src={photos[0] + "?w=720"}
+              alt={`${title} ${currenPhotoIndex + 1}`}
               className="img scale-animation cursor-pointer"
               fill
               sizes="100%"
@@ -51,9 +51,9 @@ const ImageGallery = ({ photos }) => {
           <div className="md:hidden block justify-center items-center w-[400px] h-full relative bg-slate-300">
             <Image
               src={
-                "https:" + photos[currenPhotoIndex].fields.file.url + "?w=720"
+                photos[currenPhotoIndex] + "?w=720"
               }
-              alt={`${photos[currenPhotoIndex].fields.title} ${
+              alt={`${title} ${
                 currenPhotoIndex + 1
               }`}
               className="img object-cover"
@@ -82,8 +82,8 @@ const ImageGallery = ({ photos }) => {
               <Image
                 width={300}
                 height={300}
-                src={"https:" + photo.fields.file.url + "?w=360"}
-                alt={`${photo.fields.title} ${index + 2}`}
+                src={photo + "?w=360"}
+                alt={`${title} ${index + 2}`}
                 className="img scale-animation object-cover"
               />
             </div>
@@ -97,8 +97,7 @@ const ImageGallery = ({ photos }) => {
                 fill
                 sizes="100%"
                 src={
-                  "https:" +
-                  photos[maximumVisiblePhotos - 1].fields.file.url +
+                  photos[maximumVisiblePhotos - 1] +
                   "?w=360"
                 }
                 alt={`Photo Gallery ${maximumVisiblePhotos}`}
@@ -116,9 +115,9 @@ const ImageGallery = ({ photos }) => {
             <div className="h-[75vh] w-[320px] md:w-[700px] relative bg-black">
               <Image
                 src={
-                  "https:" + photos[currenPhotoIndex].fields.file.url + "?w=720"
+                  photos[currenPhotoIndex] + "?w=720"
                 }
-                alt={`${photos[currenPhotoIndex].fields.title} ${
+                alt={`${title} ${
                   currenPhotoIndex + 1
                 }`}
                 fill
