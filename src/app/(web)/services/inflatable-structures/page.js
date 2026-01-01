@@ -1,5 +1,4 @@
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
-import { getServiceDetail } from "@/lib/contentful/api";
 import React from "react";   
 
 export const metadata = {

@@ -14,7 +14,7 @@ import IndianPhone from '@/components/Common/IndianPhone'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
 import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
 
-const ContactUs = () => {
+const ContactUsForm = () => {
   const router = useRouter();
 
   const validationSchema = Yup.object().shape({
@@ -242,4 +242,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default ContactUsForm

@@ -1,7 +1,7 @@
 'use client'
 
+import ContactUsForm from '@/components/ContactUs/ContactUsForm'
 import React from 'react'
-import ContactUs from '@/components/ContactUs/contactUs'
 
 const ContactUsPage = () => {
 
@@ -13,7 +13,7 @@ const ContactUsPage = () => {
           Contact our team for any inquiries or assistance
         </div>
         <div className="my-5 flex flex-col md:flex-row justify-between gap-3 bg-white text-slate-700 rounded-md overflow-hidden shadow-md shadow-slate-600 p-5 w-full sm:min-w-fit">
-          <ContactUs/>
+          <ContactUsForm/>
         </div>
       </div>
     </section>
