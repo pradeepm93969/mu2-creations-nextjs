@@ -8,7 +8,6 @@ const Address = () => {
 Office -1st Floor, 122 Shaika Mhara Building 
 P.O. Box: 87556, Near Al Twar Center, Al Qusais 2, Dubai UAE
 Landline : +971048346701
-Mobile is same as old one
     </div>
   );
 };
