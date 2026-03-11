@@ -5,7 +5,7 @@ const Address = () => {
     <div className="flex items-center justify-center gap-2 max-w-sm">
       <FaLocationDot />
       <a
-    href="https://maps.app.goo.gl/4LTvKkzUqfHc2vxN8?g_st=aw"
+    href="https://maps.app.goo.gl/jqmFaXjUCerQskmj8?g_st=aw"
     target="_blank"
     rel="noopener noreferrer"
     className="cursor-pointer"
