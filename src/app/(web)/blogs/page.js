@@ -1,10 +1,11 @@
 import Blog from "@/components/Blog/Blog";
-import blogs from "@/lib/data/blogs.json";
+import { getBlogs } from "@/lib/contentful/api";
 
 const page = async () => {
+  const blogResponse = await getBlogs(0, 100);
   return (
     <div className="mt-36">
-      <Blog blogs={blogs} renderCarousal={false} />
+      <Blog blogs={blogResponse.items} renderCarousal={false} />
     </div>
   );
 };

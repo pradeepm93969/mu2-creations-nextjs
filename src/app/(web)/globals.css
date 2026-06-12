@@ -38,3 +38,7 @@ h4 {
 h3 {
   @apply font-medium text-lg py-2 text-center
 }
+
+h2 {
+  @apply font-medium text-xl py-2 text-center
+}

@@ -1,8 +1,9 @@
 import services from "@/lib/data/services.json";
-import blogs from "@/lib/data/blogs.json";
+import { getBlogs } from "@/lib/contentful/api";
 
 export default async function sitemap() {
   const staticPages = ["", "/about-us", "/contact-us", "/services", "/blogs"];
+  const blogs = await getBlogs();
 
   const fields = [
     ...staticPages.map((page) => ({
@@ -13,8 +14,8 @@ export default async function sitemap() {
       url: process.env.HOST_URL + "/services/" + item.slug,
       lastModified: new Date().toISOString().split("T")[0],
     })),
-    ...blogs.map((item) => ({
-      url: process.env.HOST_URL + "/blogs/" + item.slug,
+    ...blogs.items.map((item) => ({
+      url: process.env.HOST_URL + "/blogs/" + item.fields.slug,
       lastModified: new Date().toISOString().split("T")[0],
     })),
   ];

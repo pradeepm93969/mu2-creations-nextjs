@@ -5,9 +5,10 @@ import HeroBannerCourosal from "@/components/HerobannerCourosal/HeroBannerCouros
 import Mission from "@/components/Mission/Mission";
 import Service from "@/components/Service/Service";
 import services from "@/lib/data/services.json";
-import blogs from "@/lib/data/blogs.json";
+import { getBlogs } from "@/lib/contentful/api";
 
 const Home = async () => {
+  const blogResponse = await getBlogs(0, 100);
   return (
     <div className="mt-32">
       <HeroBannerCourosal />
@@ -15,7 +16,7 @@ const Home = async () => {
       <ChooseUs />
       <AboutUs />
       <Mission />
-      <Blog blogs={blogs} renderCarousal={true} />
+      <Blog blogs={blogResponse.items} renderCarousal={true} />
     </div>
   );
 };
