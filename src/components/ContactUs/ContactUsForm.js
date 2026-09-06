@@ -1,8 +1,7 @@
 'use client'
 
-import Address from '@/components/Common/Address'
+import UAEAddress from '@/components/Common/UAEAddress'
 import Email from '@/components/Common/Email'
-import Phone from '@/components/Common/Phone'
 import Social from '@/components/Common/Social'
 import React, { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
@@ -13,6 +12,7 @@ import UAEPhone from '@/components/Common/UAEPhone'
 import IndianPhone from '@/components/Common/IndianPhone'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
 import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
+import IndianAddress from '../Common/IndianAddress'
 
 const ContactUsForm = () => {
   const router = useRouter();
@@ -33,10 +33,11 @@ const ContactUsForm = () => {
             </div>
             <Email />
             <UAEPhone />
-            {/* <IndianPhone /> */}
             <UAEWhatsapp />
-            {/* <IndianWhatsapp /> */}
-            <Address />
+            <UAEAddress />
+            <IndianPhone />
+            <IndianWhatsapp />
+            <IndianAddress />
             <div className="text-primary-main pb-4">
               <Social />
             </div>

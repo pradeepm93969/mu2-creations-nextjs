@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 
-const Address = () => {
+const UAEAddress = () => {
   return (
     <div className="flex items-center justify-center gap-2 max-w-sm">
       <FaLocationDot />
@@ -19,4 +19,4 @@ const Address = () => {
   );
 };
 
-export default Address;
+export default UAEAddress;

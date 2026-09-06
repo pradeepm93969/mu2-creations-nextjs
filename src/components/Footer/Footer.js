@@ -2,9 +2,12 @@ import Link from 'next/link'
 import React from 'react'
 import Email from '../Common/Email'
 import Social from '../Common/Social'
-import Address from '../Common/Address'
 import UAEPhone from '../Common/UAEPhone'
 import UAEWhatsapp from '../Common/UAEWhatsapp'
+import IndianPhone from '../Common/IndianPhone'
+import IndianWhatsapp from '../Common/IndianWhatsapp'
+import UAEAddress from '../Common/UAEAddress'
+import IndianAddress from '../Common/IndianAddress'
 
 const Footer = () => {
   return (
@@ -15,7 +18,7 @@ const Footer = () => {
           <div className="hidden md:block font-medium">Help & Support</div>
           <UAEPhone />
           <Email />
-          {/* <IndianPhone /> */}
+          <IndianPhone />
         </div>
       </div>
 
@@ -58,10 +61,11 @@ const Footer = () => {
               <div className="text-2xl font-medium pb-4">Contact Us</div>
               <Email />
               <UAEPhone />
-              {/* <IndianPhone /> */}
               <UAEWhatsapp />
-              {/* <IndianWhatsapp /> */}
-              <Address />
+              <UAEAddress />
+              <IndianPhone />
+              <IndianWhatsapp />
+              <IndianAddress />
             </div>
           </div>
           <div className="text-center text-md py-2">
