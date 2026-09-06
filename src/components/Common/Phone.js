@@ -19,15 +19,17 @@ const Phone = ({ phoneNumber, gtmPhoneId, isSticky = false }) => {
 
   if (isSticky) {
     const isIndianNumber = phoneNumber?.startsWith('+91')
-    const height = isIndianNumber ? 'bottom-6' : 'bottom-6'
+    const height = isIndianNumber ? 'bottom-[152px]' : 'bottom-6'
+    const color = isIndianNumber ? 'bg-blue-500 hover:bg-blue-600' : 'bg-green-500 hover:bg-green-600'
     const label = isIndianNumber ? 'India' : 'UAE'
     const labelShift = isIndianNumber ? '-right-14' : '-right-12'
+
 
     return (
       <a
         href={`tel:${phoneNumber}`}
         aria-label={`Call Now`}
-        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex flex-row bg-red-500 hover:bg-red-600`}
+        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-3 shadow-md flex flex-row ${color}`}
       >
         <MdPhone className="text-white text-2xl" />
 

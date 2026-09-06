@@ -9,6 +9,8 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { GA_ID, GTM_ID } from '@/lib/contentful/settings'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
 import UAEPhone from '@/components/Common/UAEPhone'
+import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
+import IndianPhone from '@/components/Common/IndianPhone'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -39,7 +41,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
-          {/* <IndianWhatsapp isSticky={true} /> */}
+          <IndianWhatsapp isSticky={true} />
+          <IndianPhone isSticky={true} />
           <UAEWhatsapp isSticky={true} />
           <UAEPhone isSticky={true} />
           <ScrollToTop />

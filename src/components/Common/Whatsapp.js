@@ -17,7 +17,8 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
 
   if (isSticky) {
     const isIndianNumber = phoneNumber?.startsWith('+91')
-    const height = isIndianNumber ? 'bottom-6' : 'bottom-20'
+    const color = isIndianNumber ? 'bg-blue-500 hover:bg-blue-600' : 'bg-green-500 hover:bg-green-600'
+    const height = isIndianNumber ? 'bottom-52' : 'bottom-20'
     const label = isIndianNumber ? 'India' : 'UAE'
     const labelShift = isIndianNumber ? '-right-14' : '-right-10'
 
@@ -25,7 +26,7 @@ const Whatsapp = ({ phoneNumber, gtmWhatappId, isSticky = false }) => {
       <a
         href={`https://wa.me/${phoneNumber}?text=`}
         aria-label={`WhatsApp Now`}
-        className={`fixed ${height} left-2 cursor-pointer transition-colors duration-300 rounded-full p-2.5 shadow-md flex flex-row bg-green-500 hover:bg-green-600`}
+        className={`fixed ${height}  left-2 cursor-pointer transition-colors duration-300 rounded-full p-2.5 shadow-md flex flex-row ${color}`}
       >
         <MdWhatsapp className="text-white text-3xl" />
 
