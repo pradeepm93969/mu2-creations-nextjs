@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="hidden md:block font-medium">Help & Support</div>
           <UAEPhone />
           <Email />
-          <IndianPhone />
+          {/* <IndianPhone /> */}
         </div>
       </div>
 
@@ -63,9 +63,9 @@ const Footer = () => {
               <UAEPhone />
               <UAEWhatsapp />
               <UAEAddress />
-              <IndianPhone />
+              {/* <IndianPhone />
               <IndianWhatsapp />
-              <IndianAddress />
+              <IndianAddress /> */}
             </div>
           </div>
           <div className="text-center text-md py-2">

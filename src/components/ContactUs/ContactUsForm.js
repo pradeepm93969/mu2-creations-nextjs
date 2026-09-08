@@ -35,9 +35,9 @@ const ContactUsForm = () => {
             <UAEPhone />
             <UAEWhatsapp />
             <UAEAddress />
-            <IndianPhone />
+            {/* <IndianPhone />
             <IndianWhatsapp />
-            <IndianAddress />
+            <IndianAddress /> */}
             <div className="text-primary-main pb-4">
               <Social />
             </div>

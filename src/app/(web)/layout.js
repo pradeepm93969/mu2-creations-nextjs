@@ -41,8 +41,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
-          <IndianWhatsapp isSticky={true} />
-          <IndianPhone isSticky={true} />
+          {/* <IndianWhatsapp isSticky={true} />
+          <IndianPhone isSticky={true} /> */}
           <UAEWhatsapp isSticky={true} />
           <UAEPhone isSticky={true} />
           <ScrollToTop />
