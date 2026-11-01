@@ -6,7 +6,8 @@ import Toast from '@/components/Toast/Toast'
 import ScrollToTop from '@/components/Common/ScrollToTop'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-import { GA_ID, GTM_ID } from '@/lib/contentful/settings'
+import { getSiteSettings } from '@/lib/contentful/api'
+import { SiteSettingsProvider } from '@/components/Common/SiteSettingsProvider'
 import UAEWhatsapp from '@/components/Common/UAEWhatsapp'
 import UAEPhone from '@/components/Common/UAEPhone'
 import IndianWhatsapp from '@/components/Common/IndianWhatsapp'
@@ -25,7 +26,12 @@ export const metadata = {
     'At MU2 Creations, we offer expert printing, branding, fabrication, and design services to transform your ideas into tangible impressions that leave a lasting impact. Discover our large format printing, vehicle branding, offset printing, personalized gift items, digital offset printing, digital fabric printing, signages, exhibition stands, lenticular printing, metal fabrication, inflatable structures, and Styrofoam works.',
 }
 
-export default function RootLayout({ children }) {
+// Re-fetch site settings (GTM / GA IDs) from Contentful at most once an hour
+export const revalidate = 3600
+
+export default async function RootLayout({ children }) {
+  const siteSettings = await getSiteSettings()
+
   return (
     <html lang="en">
       <head>
@@ -36,22 +42,24 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={poppins.className} suppressHydrationWarning={true}>
-        <Toast className="py-10" />
-        <main className="font-normal">
-          <Header />
-          {children}
-          <Footer />
-          {/* <IndianWhatsapp isSticky={true} />
-          <IndianPhone isSticky={true} /> */}
-          <UAEWhatsapp isSticky={true} />
-          <UAEPhone isSticky={true} />
-          <ScrollToTop />
-        </main>
+        <SiteSettingsProvider settings={siteSettings}>
+          <Toast className="py-10" />
+          <main className="font-normal">
+            <Header />
+            {children}
+            <Footer />
+            {/* <IndianWhatsapp isSticky={true} />
+            <IndianPhone isSticky={true} /> */}
+            <UAEWhatsapp isSticky={true} />
+            <UAEPhone isSticky={true} />
+            <ScrollToTop />
+          </main>
+        </SiteSettingsProvider>
         <SpeedInsights />
       </body>
       {/* Google Tag manager */}
-      <GoogleTagManager gtmId={GTM_ID} />
-      <GoogleAnalytics gaId={GA_ID} />
+      <GoogleTagManager gtmId={siteSettings.gtmId} />
+      <GoogleAnalytics gaId={siteSettings.gaId} />
     </html>
   )
 }

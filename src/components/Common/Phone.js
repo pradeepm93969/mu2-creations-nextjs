@@ -1,15 +1,16 @@
 'use client'
 import { sendGTMEvent } from '@next/third-parties/google'
 import { MdPhone } from 'react-icons/md'
-import { GTM_ID } from '@/lib/contentful/settings'
+import { useSiteSettings } from './SiteSettingsProvider'
 
 const Phone = ({ phoneNumber, gtmPhoneId, isSticky = false }) => {
+  const { gtmId } = useSiteSettings()
   const handleLinkClick = () => {
     const telUrl = `tel:${phoneNumber}`
     if (gtmPhoneId) {
       sendGTMEvent({
         event: 'conversion',
-        send_to: `${GTM_ID}/${gtmPhoneId}`,
+        send_to: `${gtmId}/${gtmPhoneId}`,
         value: 1.0,
         currency: 'AED',
       })

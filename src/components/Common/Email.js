@@ -1,16 +1,17 @@
 'use client'
 import { sendGTMEvent } from '@next/third-parties/google'
 import { MdEmail } from 'react-icons/md'
-import { GTM_ID } from '@/lib/contentful/settings'
+import { useSiteSettings } from './SiteSettingsProvider'
 
 const Email = () => {
+  const { gtmId } = useSiteSettings()
   const emailAddress = 'info@mu2creations.com'
 
   const handleLinkClick = () => {
     const mailtoUrl = `mailto:${emailAddress}`
     sendGTMEvent({
       event: 'conversion',
-      send_to: `${GTM_ID}/6CgUCMvun9kZEPn6ttkq`,
+      send_to: `${gtmId}/6CgUCMvun9kZEPn6ttkq`,
     })
     window.open(mailtoUrl, '_self')
   }

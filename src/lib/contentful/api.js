@@ -1,4 +1,5 @@
 import { client } from "./client";
+import { GA_ID, GTM_ID } from "./settings";
 
 // Simple in-memory cache with TTL
 const cache = new Map();
@@ -73,4 +74,27 @@ export async function getServiceDetail(slug) {
       "fields.slug": slug,
     });
   });
+}
+
+export async function getSiteSettings() {
+  const cacheKey = "siteSettings";
+  const ttlSeconds = 60 * 60; // Set TTL to 1 hours
+  try {
+    const response = await fetchDataWithCache(cacheKey, ttlSeconds, async () => {
+      return await client.getEntries({
+        content_type: "siteSettings",
+        select: "fields.gtmId, fields.gaId",
+        limit: 1,
+      });
+    });
+    const fields = response.items[0]?.fields ?? {};
+    return {
+      gtmId: fields.gtmId || GTM_ID,
+      gaId: fields.gaId || GA_ID,
+    };
+  } catch (error) {
+    // Fall back to the hardcoded IDs if Contentful is unreachable
+    console.error("Failed to fetch site settings from Contentful", error);
+    return { gtmId: GTM_ID, gaId: GA_ID };
+  }
 }
