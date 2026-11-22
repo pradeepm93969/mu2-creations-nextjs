@@ -42,6 +42,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center md:items-start gap-3 ml-3 xl:ml-20 pb-6 border-b-2 border-slate-300 lg:border-transparent">
               <div className="text-xl font-medium mb-4">SERVICES</div>
+              <Link href="/services/fabric-printing-services">Digital Fabric Printing</Link>
               <Link href="/services/flags-and-poles">Flags & Poles</Link>
               <Link href="/services/large-format-printing">Large Format Printing</Link>
               <Link href="/services/signages">Signages</Link>
